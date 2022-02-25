@@ -161,7 +161,11 @@
             @include flex-center;
             flex-direction: column;
             min-height: calUni(204px);
-            text-align: center;   
+            text-align: center;  
+            
+            h1 {
+                font-size: 1.2rem;
+            }
             
             @include m-breakpoint-down(small) {
                 text-align: left;

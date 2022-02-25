@@ -79,7 +79,7 @@ const ContactForm = () => {
                 (
                     <div className='thankyou_txt'>
                         <h1>
-                            Thank you for reaching me.
+                            Thank you for reaching me.🤩
                         </h1>
                         <p>
                             I will get back to you soon...
