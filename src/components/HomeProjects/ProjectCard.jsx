@@ -1,0 +1,45 @@
+import React from "react";
+import "css.gg/icons/css/code-slash.css";
+import "css.gg/icons/css/arrow-right-r.css";
+import "css.gg/icons/css/code.css";
+import "css.gg/icons/css/color-bucket.css";
+
+const ProjectCard = (props) => {
+    const { title, desc, image, icon, category} = props;
+    return (
+        <>
+            <div className="projectCard">
+                <div>
+                    <div className="projectCard--header">
+                        <div className="category_tag">
+                            <i className={`gg-${icon}`}></i>
+                            <p>
+                                {category}
+                            </p>
+                        </div>
+                    </div>
+                    <div className="projectCard--image">
+                        <img src={image} alt=""/>
+                    </div>
+                </div>
+                <div className="col_2">
+                    <div className="projectCard--text">
+                        <h1>
+                            {title}
+                        </h1>
+                        <p>
+                            {desc}
+                        </p>
+                    </div>
+
+                    <button className="view_pjBtn">
+                        view detail
+                        <i className={`gg-arrow-right-r`}></i>
+                    </button>
+                </div>
+            </div>
+        </>
+    )
+}
+
+export default ProjectCard;

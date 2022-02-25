@@ -1,0 +1,219 @@
+.contact_page_wrapper {
+    padding: 6rem 0;
+    .contact_page {
+        display: flex;
+
+        @include m-breakpoint-down(large) {
+            flex-direction: column;
+        }
+
+        .contact_text{
+            flex: 1;
+            text-align: right;
+            padding-right: calUni(130px) ;
+
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            flex-direction: column;
+
+            @include m-breakpoint-down(large) {
+                width: 70%;
+                margin: 2rem auto 0 auto;
+                padding-right: 0;
+                text-align: left;
+                align-items: flex-start;
+            }
+
+            @include m-breakpoint-down(small) {
+                width: 100%;
+            }
+
+            p {
+                margin-bottom: 2rem;
+
+                @include m-breakpoint-down(small) {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .contact_img {
+            flex: 1;
+            @include flex-center;
+
+            img {
+                width: 80%;
+
+                @include m-breakpoint-up(large) {
+                    width: 40%;
+                }
+
+                @include m-breakpoint-up(xlarge) {
+                    width: 80%;
+                }
+            }
+
+            #dark-box {
+                display: none;
+            }
+        }
+
+        .contact_form {
+            flex: 1;
+            text-align: right;
+            padding-right: calUni(130px) ;
+
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            flex-direction: column;
+
+            @include m-breakpoint-down(large) {
+                width: 70%;
+                margin: 2rem auto 0 auto;
+                padding-right: 0;
+                text-align: left;
+                align-items: flex-start;
+            }
+
+            @include m-breakpoint-down(small) {
+                width: 100%;
+            }
+
+            .tn_form {
+                display: flex;
+                flex-direction: column;
+
+                @include m-breakpoint-down(small) {
+                    width: 100%;
+                }
+
+                .head {
+                    display: flex;
+                    margin-bottom: 0.5rem;
+
+                    @include m-breakpoint-down(small) {
+                        flex-direction: column;
+                    }
+
+                    > :first-child {
+                        margin-right: 0.5rem;
+
+                        @include m-breakpoint-down(small) {
+                            margin-right: 0;
+                            margin-bottom: 0.5rem;
+                        }
+                    }
+
+                    .tn_form_input {
+                        max-width: calUni(215px);
+
+                        @include m-breakpoint-down(small) {
+                            max-width: 100%;
+                        }
+                    }
+                }
+
+                input {
+                    color: $dark-color;
+                }
+
+                .tn_form_input {
+                    min-height: calUni(40px);
+                    border-radius: 5px;
+                    outline: none;
+                    border: none;
+                    background-color: rgba($light-color, 0.4);
+                    padding: 5px;
+                    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                    border: 1px solid transparent;
+                    font-family: $font-title;
+                    font-size: 14px;
+                    transition: border 200ms ease;
+
+                    &:focus {
+                        border: 1px solid $primary-color;
+                    }
+                }
+
+                .tn_form_input.area {
+                    max-width: calUni(440px);
+                    margin-bottom: 1rem;
+                    min-height: calUni(100px);
+                }
+
+                .primary_btn {
+                    display: inline-block;
+                    height: 40px;
+                    font-size: 14px;
+                }
+            }
+
+            .error-form {
+                color: #d30000;
+                font-size: 14px;
+                text-align: center;
+            }
+        }
+
+        .thankyou_txt {
+            @include flex-center;
+            flex-direction: column;
+            min-height: calUni(204px);
+            text-align: center;   
+            
+            @include m-breakpoint-down(small) {
+                text-align: left;
+                align-items: flex-start;
+            }
+        }
+    }
+}
+
+.dark {
+    .contact_page_wrapper {
+        .contact_page {
+    
+            .contact_img {
+    
+                #light-box {
+                    display: none;
+                }
+                #dark-box {
+                    display: block;
+                }
+            }
+
+            .contact_form {
+                .tn_form {
+
+                    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                        color: rgba($light-color, 0.3);
+                        opacity: 1; /* Firefox */
+                      }
+                      
+                      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+                        color: rgba($light-color, 0.3);
+                      }
+                      
+                      ::-ms-input-placeholder { /* Microsoft Edge */
+                        color: rgba($light-color, 0.3);
+                      }
+    
+                    input {
+                        color: $light-color;
+                    }
+    
+                    .tn_form_input {
+                        background-color: rgba($white, 0.2);
+                        box-shadow: rgba($light-color, 0.16) 0px 1px 4px;
+                        &:focus {
+                            border: 1px solid $accent-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+@function calUni($e) {
+    @return ($e / 16px)+rem;
+}
+
+// Font families
+$font-title: 'Poppins', sans-serif;
+$font-primary: 'Karla', sans-serif;
+
+// Colors
+$primary-color: #1192D3;
+$dark-color: #3A4856;
+$light-color: #E5E5E5;
+$accent-color: #2FE0AC;
+$white: #ffffff;
+
+// Font sizes
+$fs-100: calUni(18px);
+$fs-200: calUni(20px);
+$fs-300: calUni(24px);
+$fs-400: calUni(36px);
+$fs-500: calUni(48px);
