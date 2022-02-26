@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Logo = () => {
     return (
         <>
-            <Link to="/tn.dev">
+            <Link to="/">
                 <svg width="116" height="59" viewBox="0 0 116 59" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <title>tn.dev logo</title>
                     <path 

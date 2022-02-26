@@ -4,7 +4,7 @@ import ScrollToTop from './container/ScrollToTop';
 import { NavBar } from './components';
 import { useSelector, useDispatch } from 'react-redux';
 import { setCurrentTheme } from './redux/slices/NavbarSlice';
-import HomePage from './pages/HomePage';
+import { HomePage, ContactPage } from './pages';
 import "css.gg/icons/css/spinner.css";
 
 const App = () => {
@@ -48,6 +48,7 @@ const App = () => {
             <ScrollToTop>
                 <Routes>
                     <Route path='/' element={<HomePage/>}/>
+                    <Route path='/contact' element={<ContactPage/>}/>
                 </Routes>
             </ScrollToTop>
         </main>

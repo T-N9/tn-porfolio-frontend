@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 function Bricks() {
   return (
     <motion.div
-    whileInView={{ opacity: [0, 1] }}
-    transition={{ duration: 0.5, delayChildren: 2 }}
+    whileInView={{ opacity: [0, 1], y: [100 , 0]}}
+    transition={{ duration: 0.5, delayChildren : 1 }}
     >
       <svg
         className="brick_svg"

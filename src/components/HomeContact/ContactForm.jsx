@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { client } from '../../client';
+import { motion } from 'framer-motion';
 
 const ContactForm = () => {
 
@@ -77,14 +78,21 @@ const ContactForm = () => {
                 </form>
                 ) :
                 (
-                    <div className='thankyou_txt'>
-                        <h1>
-                            Thank you for reaching me.🤩
-                        </h1>
-                        <p>
-                            I will get back to you soon...
-                        </p>
-                    </div>
+                    <motion.div
+                        animate={{
+                            y: [65 , 0]
+                        }}
+                        transition={{ duration: 1 }}
+                    >
+                        <div className='thankyou_txt'>
+                            <h1>
+                                Thank you for reaching me.🤩
+                            </h1>
+                            <p>
+                                I will get back to you soon...
+                            </p>
+                        </div>
+                    </motion.div>
                 )
                 }
                 

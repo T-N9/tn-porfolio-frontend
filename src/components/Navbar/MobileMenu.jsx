@@ -34,7 +34,7 @@ const MobileMenu = () => {
                         </Link>
                     </li>
                     <li onClick={toggleClick} className="nav_item">
-                        <Link to="/tn.dev/contact">
+                        <Link to="/contact">
                             Contact
                         </Link>
                     </li>

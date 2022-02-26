@@ -21,7 +21,7 @@ const NavItems = () => {
                     </Link>
                 </li>
                 <li className='nav_item link_hover'>
-                    <Link to="/tn.dev/contact">
+                    <Link to="/contact">
                         Contact
                     </Link>
                 </li>
