@@ -1,10 +1,11 @@
 import React from 'react';
-import { HomeContact, Footer } from '../components';
+import { HomeContact, Footer, ContactHero } from '../components';
 
 const ContactPage = () => {
     return (
         <>
             <div className="nav_spacer"></div>
+            <ContactHero/>
             <HomeContact/>
             <Footer/>
         </>

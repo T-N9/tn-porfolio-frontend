@@ -52,6 +52,12 @@
                 @include m-breakpoint-up(xlarge) {
                     width: 80%;
                 }
+                @include m-breakpoint-down(lmedium) {
+                    width: 60%;
+                }
+                @include m-breakpoint-down(small) {
+                    width: 80%;
+                }
             }
 
             #dark-box {

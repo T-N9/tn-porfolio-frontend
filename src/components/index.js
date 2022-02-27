@@ -6,3 +6,5 @@ export { default as HomeMotto } from './HomeMotto';
 export { default as HomeSkills } from './HomeSkills';
 export { default as HomeContact } from './HomeContact';
 export { default as Footer } from './Footer';
+
+export { default as ContactHero } from './ContactHero';

@@ -127,6 +127,21 @@
       padding: 0 1rem;
     }
   }
+
+  .container_y_1 {
+    padding-top: 1rem ;
+    padding-bottom: 1rem;
+  }
+
+  .container_y_2 {
+    padding-top: 2rem ;
+    padding-bottom: 2rem;
+  }
+
+  .container_y_3 {
+    padding-top: 3rem ;
+    padding-bottom: 3rem;
+  }
   
   *,
   *::before,
@@ -159,8 +174,25 @@
     background-color: $primary-color;
     color: $white;
     font-weight: 700;
-    height: calUni(60px);
-    padding: 0 calUni(40px);
+    height: calUni(50px);
+    padding: 0 calUni(30px);
+  
+    transition: all 200ms ease-out;
+  
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 2px 40px 0px rgba($primary-color,0.3);
+    }
+  }
+
+  .secondary_btn {
+    border-radius: 50px;
+    background-color: $primary-color;
+    color: $white;
+    font-weight: 700;
+    height: calUni(40px);
+    padding: 0 calUni(30px);
+    font-size: 16px;
   
     transition: all 200ms ease-out;
   
@@ -201,6 +233,15 @@
   
   .dark {
     .primary_btn {
+      background-color: $accent-color;
+      color: $dark-color;
+      
+      &:hover {
+        box-shadow: 0px 2px 40px 0px rgba($accent-color,0.3);
+      }
+    }
+
+    .secondary_btn {
       background-color: $accent-color;
       color: $dark-color;
       
