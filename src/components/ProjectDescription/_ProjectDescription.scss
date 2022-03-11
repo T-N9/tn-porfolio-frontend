@@ -1,3 +1,17 @@
+.description {
+    &--introduction {
+        @include m-breakpoint-down(small) {
+            padding: 0 !important;
+        }
+    }
+
+    &--development {
+        @include m-breakpoint-down(small) {
+            padding: 0 !important;
+        }
+    }
+}
+
 .block_content {
     margin-bottom: 1rem;
     a {
@@ -5,13 +19,22 @@
     }
 
     > p {
-        // font-size: $fs-200;
-        // line-height: calUni(23.38px);
-        // margin-bottom: calUni(33px);
       
         @include m-breakpoint-down(small) {
           font-size: calUni(16px);
         }
+    }
+}
+
+.view_live_btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    > i {
+        margin-left: 10px;
     }
 }
 

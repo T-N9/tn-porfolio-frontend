@@ -26,11 +26,9 @@ const ProjectHero = (props) => {
                                 {category}
                             </p>
                             
-                        </div>
-                        
+                        </div>  
                     </div>
                 </div>
-
                 <img src={mainImage} alt="" />
             </div>
         </section>

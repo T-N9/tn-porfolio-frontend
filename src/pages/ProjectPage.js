@@ -20,21 +20,23 @@ const ProjectPage = () => {
         });
     }, [slug])
 
-    let title, image, intro, category, icon, status, url, period, type, role, introduction;
+    let title, image, intro, category, icon, status, url, period, type, role, introduction, development, mockup;
     if (project !== null) {
+        let source = project[0];
 
-        title = project[0].title;
-        console.log(project);
-        image = urlFor(project[0].imgUrl);
-        intro = project[0].description;
-        category = project[0].category;
-        icon = project[0].icon;
-        status = project[0].status;
-        type = project[0].type;
-        role = project[0].role;
-        url = project[0].url;
-        period = project[0].period;
-        introduction = project[0].introduction;
+        title = source.title;
+        image = urlFor(source.imgUrl);
+        intro = source.description;
+        category = source.category;
+        icon = source.icon;
+        status = source.status;
+        type = source.type;
+        role = source.role;
+        url = source.url;
+        period = source.period;
+        introduction = source.introduction;
+        development = source.development;
+        mockup = urlFor(source.mockup)
     }
 
     return (
@@ -66,6 +68,8 @@ const ProjectPage = () => {
                             <ProjectDescription
                                 introduction = {introduction}
                                 url = {url}
+                                development= {development}
+                                mockup = {mockup}
                             />
                         </>
 
