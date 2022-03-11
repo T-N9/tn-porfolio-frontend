@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProjectStatus = (props) => {
 
-    const { status, url, period, role, type } = props;
+    const { status, period, role, type } = props;
 
     return (
         <section className='status container'>
