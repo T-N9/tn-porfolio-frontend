@@ -66,6 +66,7 @@ const ProjectPage = () => {
                             />
                             <ProjectDescription
                                 introduction = {introduction}
+                                utl = {url}
                             />
                         </>
 

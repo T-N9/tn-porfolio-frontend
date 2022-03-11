@@ -3,7 +3,7 @@ import BlockContent from '@sanity/block-content-to-react';
 
 const ProjectDescription = (props) => {
 
-    const { introduction } = props;
+    const { introduction, url } = props;
 
     return (
         <section className='description'>
@@ -15,6 +15,9 @@ const ProjectDescription = (props) => {
                     <div className='block_content'>
                         <BlockContent blocks={introduction} />
                     </div>
+                    {
+                        url
+                    }
                 </div>
             </div>
         </section>
