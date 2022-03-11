@@ -11,7 +11,7 @@ const ProjectStatus = (props) => {
                 <p className='name'>
                     Status
                 </p>
-                <p className='status'>
+                <p className='status_t'>
                     {status}
                 </p>
             </div>
@@ -19,7 +19,7 @@ const ProjectStatus = (props) => {
                 <p className='name'>
                     Type
                 </p>
-                <p className='status'>
+                <p className='status_t'>
                     {type}
                 </p>
             </div>
@@ -27,7 +27,7 @@ const ProjectStatus = (props) => {
                 <p className='name'>
                     Role
                 </p>
-                <p className='status'>
+                <p className='status_t'>
                     {role}
                 </p>
             </div>
@@ -35,7 +35,7 @@ const ProjectStatus = (props) => {
                 <p className='name'>
                     Period
                 </p>
-                <p className='status'>
+                <p className='status_t'>
                     {period}
                 </p>
             </div>

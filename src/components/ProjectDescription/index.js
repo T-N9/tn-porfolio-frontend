@@ -15,9 +15,12 @@ const ProjectDescription = (props) => {
                     <div className='block_content'>
                         <BlockContent blocks={introduction} />
                     </div>
-                    {
-                        url
-                    }
+                    <a href={url} target="_blank" rel='noreferrer'>
+                        <button className='secondary_btn'>
+                            View live
+                        </button>
+                    </a>
+                    
                 </div>
             </div>
         </section>

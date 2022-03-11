@@ -60,13 +60,12 @@ const ProjectPage = () => {
                             <ProjectStatus
                                 status={status}
                                 type={type}
-                                url={url}
                                 role={role}
                                 period={period}
                             />
                             <ProjectDescription
                                 introduction = {introduction}
-                                utl = {url}
+                                url = {url}
                             />
                         </>
 
