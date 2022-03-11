@@ -19,11 +19,15 @@ const SwiperCards = () => {
         });
     }, []);
 
+    if(projects !== []) {
+        // console.log(projects);
+    }
+
     const ProjectCards = projects.map( project => {
-        const { title, description , icon, category} = project;
+        const { title, description , icon, category, slug} = project;
         return (
             <SwiperSlide key={nanoid()}>
-                <Link to={`/tn.dev/portfolio/${title}`}>
+                <Link to={`/portfolio/${slug.current}`}>
                     <ProjectCard
                         title = {title}
                         desc = {description}

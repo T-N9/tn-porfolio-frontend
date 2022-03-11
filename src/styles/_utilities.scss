@@ -128,6 +128,20 @@
     }
   }
 
+  .container_x_sm{
+    padding: 0 calUni(200px);
+    max-width: calUni(1440px);
+    margin: auto;
+
+    @include m-breakpoint-down(large) {
+      padding: 0 calUni(48px);
+    }
+  
+    @include m-breakpoint-down(small) {
+      padding: 0 1rem;
+    }
+  }
+
   .container_y_1 {
     padding-top: 1rem ;
     padding-bottom: 1rem;

@@ -1,0 +1,53 @@
+.status {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @include m-breakpoint-down(small) {
+        justify-content: flex-start;
+    }
+
+    > :not(:last-child) {
+        margin-right: 1rem;
+        
+        @include m-breakpoint-down(small) {
+            margin-right: 0;
+            margin-bottom: 0.5rem;
+        }
+    }
+    &--card {
+        padding: 0.5rem 1rem;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        font-size: 1rem;
+
+        @include m-breakpoint-down(small) {
+            width: 100%;
+        }
+        .name {
+            font-weight: bold;
+        }
+
+        .status {
+            color: $primary-color;
+            text-transform: uppercase;
+            
+        }
+
+        @include m-breakpoint-down(small) {
+            font-size: 14px;
+        }
+    }
+}
+
+.dark {
+    .status {
+
+        &--card {
+
+    
+            .status {
+                color: $accent-color;
+            }
+        }
+    }
+}
