@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { client, urlFor } from '../client';
 import { ProjectDescription, ProjectHero, ProjectStatus } from '../components';
+import "css.gg/icons/css/spinner.css";
 
 const ProjectPage = () => {
 
@@ -20,7 +21,7 @@ const ProjectPage = () => {
         });
     }, [slug])
 
-    let title, image, intro, category, icon, status, url, period, type, role, introduction, development, mockup , pandp;
+    let title, image, intro, category, icon, status, url, period, type, role, introduction, development, mockup , pandp , designing, mockup_d, palette;
     if (project !== null) {
         let source = project[0];
 
@@ -38,6 +39,9 @@ const ProjectPage = () => {
         development = source.development;
         mockup = urlFor(source.mockup)
         pandp = source.pandp;
+        designing= source.designing;
+        mockup_d = urlFor(source.mockup_d);
+        palette = source.colors;
     }
 
     return (
@@ -46,8 +50,8 @@ const ProjectPage = () => {
             {
                 project === null ?
                     (
-                        <div>
-                            Loading...
+                        <div className='loading_page'>
+                            <i className={`gg-${"spinner"}`}></i>
                         </div>
                     )
                     :
@@ -72,6 +76,9 @@ const ProjectPage = () => {
                                 development= {development}
                                 mockup = {mockup}
                                 pandp = {pandp}
+                                designing = {designing}
+                                mockup_d = {mockup_d}
+                                palette = {palette}
                             />
                         </>
 

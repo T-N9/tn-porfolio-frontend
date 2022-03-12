@@ -4,7 +4,24 @@ import "css.gg/icons/css/chevron-right-r.css";
 
 const ProjectDescription = (props) => {
 
-    const { introduction, url, development, mockup, pandp } = props;
+    const { introduction, url, development, mockup, pandp, designing, mockup_d ,palette } = props;
+
+    const paletteList = palette.map(item => {
+        let color = item.split(',');
+        let code = color[0];
+        let name = color[1];
+
+        return(
+            <div className='palette_item' key={name}>
+                <div className='color_block' style={{ backgroundColor : `${code}`}}>
+
+                </div>
+                <p>
+                    {name}
+                </p>
+            </div>
+        )
+    })
 
     return (
         <section className='description'>
@@ -48,6 +65,24 @@ const ProjectDescription = (props) => {
                         <BlockContent blocks={pandp}/>
                     </div>
                 </div>
+            </div>
+            <div className='container_x_sm container_y_2'>
+                <div className='description--development container_sm'>
+                    <h1 className='title_text'>
+                        Designing
+                    </h1>
+                    <div className='block_content'>
+                        <BlockContent blocks={designing}/>
+                    </div>
+
+                    <img className='mockup_img' src={mockup_d} alt="mockup" />
+                </div>
+                <div className='palette_wrapper'>
+                {
+                    paletteList
+                }
+                </div>
+
             </div>
         </section>
     );
