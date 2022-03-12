@@ -18,7 +18,8 @@
         color: $primary-color;
     }
 
-    > p {
+     p {
+        margin-bottom: 2rem;
       
         @include m-breakpoint-down(small) {
           font-size: calUni(16px);
@@ -36,6 +37,10 @@
     > i {
         margin-left: 10px;
     }
+}
+
+.mockup_img {
+    margin: 2rem 0rem;
 }
 
 .dark {

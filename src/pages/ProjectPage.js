@@ -20,7 +20,7 @@ const ProjectPage = () => {
         });
     }, [slug])
 
-    let title, image, intro, category, icon, status, url, period, type, role, introduction, development, mockup;
+    let title, image, intro, category, icon, status, url, period, type, role, introduction, development, mockup , pandp;
     if (project !== null) {
         let source = project[0];
 
@@ -37,6 +37,7 @@ const ProjectPage = () => {
         introduction = source.introduction;
         development = source.development;
         mockup = urlFor(source.mockup)
+        pandp = source.pandp;
     }
 
     return (
@@ -70,6 +71,7 @@ const ProjectPage = () => {
                                 url = {url}
                                 development= {development}
                                 mockup = {mockup}
+                                pandp = {pandp}
                             />
                         </>
 

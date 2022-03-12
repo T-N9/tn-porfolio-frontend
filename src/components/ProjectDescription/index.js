@@ -4,7 +4,7 @@ import "css.gg/icons/css/chevron-right-r.css";
 
 const ProjectDescription = (props) => {
 
-    const { introduction, url, development, mockup } = props;
+    const { introduction, url, development, mockup, pandp } = props;
 
     return (
         <section className='description'>
@@ -27,7 +27,7 @@ const ProjectDescription = (props) => {
                 </div>
 
             </div>
-            <div className='container_x_sm'>
+            <div className='container_x_sm container_y_1'>
                 <div className='description--development container_sm'>
                     <h1 className='title_text'>
                         Development
@@ -35,11 +35,19 @@ const ProjectDescription = (props) => {
                     <div className='block_content'>
                         <BlockContent blocks={development} />
                     </div>
-
-                    <img src={mockup} alt="mockup" />
                 </div>
 
-                
+                <img className='mockup_img' src={mockup} alt="mockup" />
+            </div>
+            <div className='container_x_sm'>
+                <div className='description--development container_sm'>
+                    <h1 className='title_text_1'>
+                        Planning and preparation
+                    </h1>
+                    <div className='block_content'>
+                        <BlockContent blocks={pandp}/>
+                    </div>
+                </div>
             </div>
         </section>
     );

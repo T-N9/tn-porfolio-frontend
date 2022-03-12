@@ -223,6 +223,14 @@
     color: $primary-color;
     margin-bottom: calUni(20px);
   }
+
+  .title_text_1 {
+    font-size: $fs-300;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $primary-color;
+    margin-bottom: calUni(20px);
+  }
   
   .lg_para {
     font-size: $fs-200;
@@ -265,6 +273,10 @@
     }
   
     .title_text {
+      color: $accent-color;
+    }
+
+    .title_text_1 {
       color: $accent-color;
     }
   }
@@ -360,7 +372,7 @@
   }
   
   .nav_spacer {
-    height: calUni(67px);
+    height: calUni(53.77px);
   
     @include m-breakpoint-up(large) {
       height: calUni(53.77px);
