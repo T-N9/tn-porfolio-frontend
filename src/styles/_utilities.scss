@@ -199,6 +199,23 @@
     }
   }
 
+  .outlined_btn {
+    border-radius: 6px;
+    background-color: transparent;
+    color: $primary-color;
+    border: 2px solid $primary-color;
+    font-weight: 700;
+    height: calUni(50px);
+    padding: 0 calUni(30px);
+  
+    transition: all 200ms ease-out;
+  
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 2px 40px 0px rgba($primary-color,0.3);
+    }
+  }
+
   .secondary_btn {
     border-radius: 50px;
     background-color: $primary-color;
@@ -280,6 +297,8 @@
       color: $accent-color;
     }
   }
+
+
   
   // path-color fills
   
@@ -426,4 +445,9 @@
       background-color: $dark-color;
       color: $accent-color;
     }
+  }
+
+  .button_bar {
+    display: flex;
+    justify-content: flex-end;
   }

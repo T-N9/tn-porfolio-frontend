@@ -1,25 +1,43 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { client, urlFor } from '../client';
 import { ProjectDescription, ProjectHero, ProjectStatus, Footer } from '../components';
 import "css.gg/icons/css/spinner.css";
+import "css.gg/icons/css/arrow-right-o.css";
 
 const ProjectPage = () => {
 
+    const [slugs, setSlugs ] = useState([]);
+    const [nextProject, setNextProject ] = useState('');
     const [project, setProject] = useState(null);
     const { slug } = useParams();
 
     useEffect(() => {
-        const query = `*[_type == "projects" ]`;
+        const query = `*[_type == "projects" ] | order(order asc)`;
 
         client.fetch(query).then((data) => {
+
+            data.map(item => {
+                setSlugs(prev=> [...prev, item.slug.current])
+                return item;
+            });
+
             let my_project = data.filter(item => {
+                
                 return slug === item.slug.current
             });
 
             setProject(my_project);
         });
+
     }, [slug])
+
+    useEffect(() => {
+        if(slugs !== []){
+            setNextProject(slugs[slugs.indexOf(slug)+1]);
+        }
+    },[slugs,slug])
 
     let title, image, intro, category, icon, status, url, period, type, role, introduction, development, mockup , pandp , designing, mockup_d, palette, typo, logo;
     if (project !== null) {
@@ -84,6 +102,13 @@ const ProjectPage = () => {
                                 typo = {typo}
                                 logo = {logo}
                             />
+                            <div className='button_bar container_y_2 container_sm'>
+                                <Link to={`/portfolio/${nextProject}`}>
+                                    <button className='outlined_btn'>
+                                        <i className="gg-arrow-right-o"></i>
+                                    </button>
+                                </Link>
+                            </div>
                         </>
 
                     )
