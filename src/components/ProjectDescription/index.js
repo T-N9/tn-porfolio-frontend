@@ -4,7 +4,7 @@ import "css.gg/icons/css/chevron-right-r.css";
 
 const ProjectDescription = (props) => {
 
-    const { introduction, url, development, mockup, pandp, designing, mockup_d ,palette } = props;
+    const { introduction, url, development, mockup, pandp, designing, mockup_d ,palette, typo, logo } = props;
 
     const paletteList = palette.map(item => {
         let color = item.split(',');
@@ -77,12 +77,28 @@ const ProjectDescription = (props) => {
 
                     <img className='mockup_img' src={mockup_d} alt="mockup" />
                 </div>
-                <div className='palette_wrapper'>
-                {
-                    paletteList
-                }
+                <div className='container_sm container_y_1'>
+                    <h1 className='title_text_1 text_center'>
+                        Palette
+                    </h1>
+                    <div className='palette_wrapper'>
+                    {
+                        paletteList
+                    }
+                    </div>
                 </div>
-
+                <div className='container_sm no_pad_con container_y_1'>
+                    <h1 className='title_text_1 text_center typo'>
+                        Typo
+                    </h1>
+                    <img src={typo} alt="Typo" />
+                </div>
+                <div className='container_sm no_pad_con container_y_1'>
+                    <h1 className='title_text_1 text_center'>
+                        Logo
+                    </h1>
+                    <img className='logo_img' src={logo} alt="logo" />
+                </div>
             </div>
         </section>
     );

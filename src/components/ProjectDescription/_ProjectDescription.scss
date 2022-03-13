@@ -11,6 +11,26 @@
             padding: 0 !important;
         }
     }
+
+    .typo {
+        margin: 0;
+        margin-bottom: -35px;
+
+        @include m-breakpoint-down(small) {
+            margin-bottom: -10px;
+        }
+    }
+}
+
+.no_pad_con {
+    @include m-breakpoint-down(small){
+        padding: 0 !important;
+    }
+
+    .logo_img {
+        border-radius: 10px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
 }
 
 .block_content {

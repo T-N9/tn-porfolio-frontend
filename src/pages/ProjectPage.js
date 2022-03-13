@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { client, urlFor } from '../client';
-import { ProjectDescription, ProjectHero, ProjectStatus } from '../components';
+import { ProjectDescription, ProjectHero, ProjectStatus, Footer } from '../components';
 import "css.gg/icons/css/spinner.css";
 
 const ProjectPage = () => {
@@ -21,7 +21,7 @@ const ProjectPage = () => {
         });
     }, [slug])
 
-    let title, image, intro, category, icon, status, url, period, type, role, introduction, development, mockup , pandp , designing, mockup_d, palette;
+    let title, image, intro, category, icon, status, url, period, type, role, introduction, development, mockup , pandp , designing, mockup_d, palette, typo, logo;
     if (project !== null) {
         let source = project[0];
 
@@ -42,6 +42,8 @@ const ProjectPage = () => {
         designing= source.designing;
         mockup_d = urlFor(source.mockup_d);
         palette = source.colors;
+        typo = urlFor(source.typo);
+        logo = urlFor(source.logo);
     }
 
     return (
@@ -79,12 +81,14 @@ const ProjectPage = () => {
                                 designing = {designing}
                                 mockup_d = {mockup_d}
                                 palette = {palette}
+                                typo = {typo}
+                                logo = {logo}
                             />
                         </>
 
                     )
             }
-
+            <Footer/>
         </>
     );
 }
