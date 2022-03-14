@@ -52,9 +52,11 @@ const ProjectDescription = (props) => {
                     <div className='block_content'>
                         <BlockContent blocks={development} />
                     </div>
+
+                    <img className='mockup_img' src={mockup} alt="mockup" />
                 </div>
 
-                <img className='mockup_img' src={mockup} alt="mockup" />
+                
             </div>
             <div className='container_x_sm'>
                 <div className='description--development container_sm'>

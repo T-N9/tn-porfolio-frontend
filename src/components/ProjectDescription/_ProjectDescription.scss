@@ -88,6 +88,12 @@
 
 .mockup_img {
     margin: 2rem 0rem;
+    width: 80%;
+    margin: auto;
+
+    @include m-breakpoint-down(lmedium) {
+        width: 100%;
+    }
 }
 
 .dark {
