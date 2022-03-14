@@ -19,17 +19,17 @@ const MobileMenu = () => {
                 <Hamburger/>
                 <ul className="nav_mobile_items">
                     <li onClick={toggleClick} className="nav_item">
-                        <Link to="/tn.dev/about">
+                        <Link to="/about">
                             About
                         </Link>
                     </li>
                     <li onClick={toggleClick} className="nav_item">
-                        <Link to="/tn.dev/portfolio">
+                        <Link to="/portfolio">
                             Portfolio
                         </Link>
                     </li>
                     <li onClick={toggleClick} className="nav_item">
-                        <Link to="/tn.dev/services">
+                        <Link to="/services">
                             Services
                         </Link>
                     </li>

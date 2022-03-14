@@ -6,17 +6,17 @@ const NavItems = () => {
         <>
             <ul className='nav_items'>
                 <li className='nav_item link_hover'>
-                    <Link to="/tn.dev/about">
+                    <Link to="/about">
                         About
                     </Link>
                 </li>
                 <li className='nav_item link_hover'>
-                    <Link to="/tn.dev/portfolio">
+                    <Link to="/portfolio">
                         Portfolio
                     </Link>
                 </li>
                 <li className='nav_item link_hover'>
-                    <Link to="/tn.dev/services">
+                    <Link to="/services">
                         Services
                     </Link>
                 </li>

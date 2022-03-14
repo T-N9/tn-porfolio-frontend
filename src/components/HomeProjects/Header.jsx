@@ -9,7 +9,7 @@ const Header = () => {
                     Projects
                 </h1>
 
-                <Link to='/tn.dev/portfolio'>
+                <Link to='/portfolio'>
                     <button className="header_btn link_hover">
                         view all works &gt;
                     </button>

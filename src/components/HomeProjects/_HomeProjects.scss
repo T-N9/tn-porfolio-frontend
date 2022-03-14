@@ -260,7 +260,7 @@
 
 .hero_portfolio {
     height: 70vh;
-    background-color: #f0f0f0;
+    background-color: $white;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px inset;
     position: relative;
 
@@ -339,7 +339,7 @@
 
 
 .dark {
-    .hero-portfolio {
+    .hero_portfolio {
         background-color: $dark-color;
     
         h1 {
@@ -347,10 +347,10 @@
         }
     }
 
-    .portfolio-route-wrapper {
-        .content-wrapper {
+    .portfolio_route_wrapper {
+        .content_wrapper {
             // background: linear-gradient(0deg, rgba($accent-color, 0.5) 0%, $dark-color 100%);
-            background-color: $dark-color;
+            background-color: $dark-color !important;
     
             .projectContent {
     
