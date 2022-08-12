@@ -10,13 +10,15 @@ import "css.gg/icons/css/spinner.css";
 const App = () => {
 
     const [ loading , setLoading ] = useState(true);
+    const { theme } = useSelector((state) => state.navBar);
 
     const localStorageKey = "theme";
     
     const dispatch = useDispatch();
+    let persistedTheme = localStorage.getItem(localStorageKey);
 
     useEffect(() => {
-        let persistedTheme = localStorage.getItem(localStorageKey);
+        
         if(persistedTheme === null) {
             localStorage.setItem(localStorageKey, false);
             persistedTheme = localStorage.getItem(localStorageKey) && false;
@@ -33,10 +35,7 @@ const App = () => {
         setInterval(() => {
             setLoading(false);
         }, 2000);
-    }, [localStorageKey, dispatch]);
-
-
-    const { theme } = useSelector((state) => state.navBar);
+    }, []);
 
     return (
         <main className={theme ? 'main_content dark' :  'main_content'}>
