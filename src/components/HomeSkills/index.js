@@ -1,5 +1,5 @@
 import React from 'react';
-import { Html5, CssThree, Sass, Javascript, Bootstrap, Tailwindcss, ReactJs, Github, Figma, Microsoftword, Microsoftpowerpoint, Visualstudiocode } from '@icons-pack/react-simple-icons';
+import { Html5, CssThree, Sass, Javascript, Bootstrap, Tailwindcss, ReactJs, Github, Figma, Microsoftword, Microsoftpowerpoint, Visualstudiocode, Redux, Nextdotjs, Materialui, Firebase } from '@icons-pack/react-simple-icons';
 import ServiceIntro from './ServiceIntro';
 
 const HomeSkills = () => {
@@ -55,6 +55,23 @@ const HomeSkills = () => {
                     <div className="skill_item">
                         <Visualstudiocode xlinkTitle="true" />
                         VS Code
+                    </div>
+
+                    <div className="skill_item">
+                        <Redux xlinkTitle="true" />
+                        Redux
+                    </div>
+                    <div className="skill_item">
+                        <Nextdotjs xlinkTitle="true" />
+                        Next JS
+                    </div>
+                    <div className="skill_item">
+                        <Materialui xlinkTitle="true" />
+                        Material UI
+                    </div>
+                    <div className="skill_item">
+                        <Firebase xlinkTitle="true" />
+                        Firebase
                     </div>
                 </div>
 
