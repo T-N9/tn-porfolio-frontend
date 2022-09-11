@@ -35,8 +35,8 @@ const PortfolioProjects = () => {
     }
 
     return (
-        <div className="projectContent container">
-            <span id="projects"></span>
+        <div id="projects" className="projectContent container">
+            {/* <span ></span> */}
             <h1 className="title_text">Recent Works</h1>
             <div className="projectContent--grid">
                 {projectList}

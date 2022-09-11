@@ -115,7 +115,7 @@
         }
     
         .squares {
-            border-color: $accent-color !important;
+            border-color: rgba($accent-color, 0.3) !important;
             background-color: rgba($accent-color, 0.3) !important;
         }
     }

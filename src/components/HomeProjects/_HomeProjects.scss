@@ -84,11 +84,23 @@
   margin-right: auto;
   margin-left: auto;
   touch-action: pan-y;
-  padding: calUni(20px) 0 !important;
+  padding: calUni(20px) 0 calUni(80px) 0 !important;
   margin-top: 3rem;
 }
 
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $primary-color;
+}
+
 .dark {
+  .swiper-pagination-bullet-active {
+    background-color: $accent-color;
+  }
   .portfolio {
     &--header {
       .header_btn {
@@ -155,6 +167,11 @@
 
       i {
         z-index: -1;
+      }
+
+      @include m-breakpoint-down(lmedium) {
+        visibility: visible;
+        opacity: 1;
       }
     }
   }
@@ -239,6 +256,12 @@
         background-color: $dark-color;
         color: $accent-color;
       }
+    }
+
+    .category_tag {
+
+      background-color: $dark-color;
+      color: $accent-color;
     }
 
     &--text {
