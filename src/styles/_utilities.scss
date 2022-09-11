@@ -197,6 +197,9 @@
         transform: translateY(-5px);
         box-shadow: 0px 2px 40px 0px rgba($primary-color,0.3);
     }
+    @include m-breakpoint-down(small) {
+      font-size: 14px;
+    }
   }
 
   .outlined_btn {
@@ -456,4 +459,8 @@
   .button_bar {
     display: flex;
     justify-content: flex-end;
+  }
+
+  .gradient_bg_transparent {
+    background: linear-gradient(90deg, rgba(47, 224, 172, 0) 3.65%, rgba(116, 209, 255, 0.15) 100%);
   }

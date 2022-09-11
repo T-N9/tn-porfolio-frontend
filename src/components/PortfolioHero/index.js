@@ -5,7 +5,7 @@ const PortfolioHero = () => {
     return (
         <>
             <div className="hero_portfolio">
-                <div className="flex_auto">
+                <div className="flex_auto gradient_bg_transparent">
                     <h1>
                         The <span className="ht_text">followings</span> are my practical 
                         and personal projects.

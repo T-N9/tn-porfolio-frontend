@@ -218,6 +218,7 @@
                     .tn_form_input {
                         background-color: rgba($white, 0.2);
                         box-shadow: rgba($light-color, 0.16) 0px 1px 4px;
+                        color: #fff;
                         &:focus {
                             border: 1px solid $accent-color;
                         }

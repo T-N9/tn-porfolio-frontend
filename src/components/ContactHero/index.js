@@ -3,7 +3,7 @@ import React from 'react';
 const ContactHero = () => {
     return (
         <section className='contact_hero_wrapper'>
-            <div className='container_sm contact_hero container_y_2'>
+            <div className='container_sm contact_hero container_y_2 gradient_bg_transparent'>
                 <div className='content'>
                     <h1 className='title_text'>
                         Open to work
