@@ -29,8 +29,6 @@ const App = () => {
         }
 
         dispatch(setCurrentTheme(persistedTheme))
-        // console.log(persistedTheme);
-        // localStorage.removeItem(localStorageKey);
 
         setInterval(() => {
             setLoading(false);

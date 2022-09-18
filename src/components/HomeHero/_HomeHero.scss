@@ -8,7 +8,7 @@
     .hero_page {
         @include flex-center;
 
-        @include m-breakpoint-down(large) {
+        @include m-breakpoint-down(lmedium) {
             flex-direction: column-reverse;
         }
 
