@@ -6,8 +6,8 @@ const ContactImg = () => {
     return (
         <>
             <div className="contact_img">
-                <img id="light-box" src={MailBox} alt="" />
-                <img id="dark-box" src={MailBoxDark} alt="" />
+                <img id="light-box" src={MailBox} alt="mailbox" width="429.19px" height="312.41px" />
+                <img id="dark-box" src={MailBoxDark} alt="mailbox" width="429.19px" height="312.41px" />
             </div>
         </>
     );

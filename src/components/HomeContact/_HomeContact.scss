@@ -44,6 +44,7 @@
 
             img {
                 width: 80%;
+                height: auto;
 
                 @include m-breakpoint-up(large) {
                     width: 40%;
