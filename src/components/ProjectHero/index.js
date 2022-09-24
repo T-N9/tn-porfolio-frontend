@@ -29,7 +29,7 @@ const ProjectHero = (props) => {
                         </div>  
                     </div>
                 </div>
-                <img src={mainImage} alt="" />
+                <img src={mainImage} alt={`${title} project`} />
             </div>
         </section>
     );

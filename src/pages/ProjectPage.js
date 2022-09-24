@@ -10,12 +10,19 @@ import {
 } from "../components";
 import "css.gg/icons/css/spinner.css";
 import "css.gg/icons/css/arrow-right-o.css";
+import "css.gg/icons/css/arrow-left-o.css";
 
 const ProjectPage = () => {
   const [slugs, setSlugs] = useState([]);
   const [nextProject, setNextProject] = useState("");
+  const [prevProject, setPrevProject] = useState("");
   const [project, setProject] = useState(null);
   const { slug } = useParams();
+
+  const projectNo = slugs.indexOf(slug) + 1;
+
+  let isPrev = projectNo > 1;
+  let isNext = projectNo < slugs.length + 1;
 
   useEffect(() => {
     const query = `*[_type == "projects" ] | order(order asc)`;
@@ -38,6 +45,12 @@ const ProjectPage = () => {
     if (slugs !== []) {
       setNextProject(slugs[slugs.indexOf(slug) + 1]);
     }
+
+    if (isPrev) {
+      setPrevProject(slugs[slugs.indexOf(slug) - 1]);
+    }
+
+    console.log(slugs.length);
   }, [slugs, slug]);
 
   let title,
@@ -118,11 +131,25 @@ const ProjectPage = () => {
             logo={logo}
           />
           <div className="button_bar container_y_2 container_sm">
-            <Link to={`/portfolio/${nextProject}`}>
-              <button className="outlined_btn">
-                <i className="gg-arrow-right-o"></i>
-              </button>
-            </Link>
+            <div>
+              {isPrev && (
+                <Link to={`/portfolio/${prevProject}`}>
+                  <button className="outlined_btn">
+                    <i className="gg-arrow-left-o"></i>
+                  </button>
+                </Link>
+              )}
+            </div>
+
+            <div>
+              {isNext && (
+                <Link to={`/portfolio/${nextProject}`}>
+                  <button className="outlined_btn">
+                    <i className="gg-arrow-right-o"></i>
+                  </button>
+                </Link>
+              )}
+            </div>
           </div>
         </>
       )}
