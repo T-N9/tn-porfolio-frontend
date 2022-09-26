@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ServiceIntro = () =>{
     return (
@@ -8,9 +9,11 @@ const ServiceIntro = () =>{
                 transforming a web design template into a design functional website.
             </p>
 
-            <button className='primary_btn'>
-                View my services
-            </button>
+            <Link to={'/services'}>
+                <button className='primary_btn'>
+                    View services
+                </button>
+            </Link>
         </section>
     )
 }

@@ -329,7 +329,15 @@ button {
 
 .primary_path.stroke {
   stroke: $primary-color;
-  transition: stroke 200ms ease 400ms;
+  transition: all 200ms ease 400ms;
+}
+
+.primary_path.stroke.fill-wah {
+  fill: white !important;
+}
+
+.primary_path.stroke.fill-tra {
+  fill: transparent !important;
 }
 
 .primary_gra_1 {
@@ -374,6 +382,10 @@ button {
 
   .primary_path.stroke {
     stroke: $accent-color;
+  }
+
+  .primary_path.stroke.fill-wah {
+    fill: $dark-color !important;
   }
 
   .primary_path.reverse {

@@ -38,7 +38,7 @@ const ContactHero = () => {
                             </ul>
                         </div>
                         <button className='secondary_btn'>
-                            My Skills
+                            My Services
                         </button>
                     </div>
 

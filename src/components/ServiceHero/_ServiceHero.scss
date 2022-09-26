@@ -1,0 +1,46 @@
+.service_hero {
+    position: relative;
+    min-height: 70vh;
+    @include flex-center;
+    background-color: white;
+    background-image: url("https://www.transparenttextures.com/patterns/graphy.png");
+    background-attachment: fixed;
+
+    &--overlay {
+        position: absolute;
+        background-color: white;
+        opacity: 0.7;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        transition: background-color 200ms 100ms ease-out;
+    }
+
+    &--text {
+        position: relative;
+        font-size: 4rem;
+        text-align: center;
+        z-index: 500;
+
+        @include m-breakpoint-down(lmedium) {
+            font-size: 3rem;
+        }
+
+        @include m-breakpoint-down(small) {
+            font-size: 2rem;
+            padding: 20px;
+        }
+    }
+}
+
+.dark {
+    .service_hero {
+        background-color: $dark-color;
+
+        &--overlay {
+            background-color: $dark-color;
+        }
+    }
+}
