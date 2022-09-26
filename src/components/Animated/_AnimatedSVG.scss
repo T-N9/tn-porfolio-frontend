@@ -117,7 +117,7 @@
   animation-delay: 300ms !important;
 }
 .delay_400 {
-  animation-delay: 400ms;
+  animation-delay: 400ms !important;
 }
 .delay_500 {
   animation-delay: 500ms;
@@ -199,5 +199,43 @@
 .seoGraph_ani {
   transform-origin: bottom;
   animation: seoGraph 5000ms alternate cubic-bezier(0.215, 0.610, 0.355, 1) infinite;
+}
+
+/* Design TO Code */
+@keyframes template {
+  0%{
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+  100%{
+    transform: scale(0.6);
+    opacity: 0;
+  }
+}
+
+.template_ani {
+  transform-origin: center;
+  animation: template 2000ms alternate ease-out infinite;
+}
+
+.template_ani_rev {
+  transform-origin: center;
+  animation: template 2000ms alternate-reverse ease-out infinite;
+}
+
+/* Frontend */
+@keyframes frontend {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.frontend_ani {
+  transform-origin: center;
+  animation: frontend 8000ms both linear infinite;
 }
 

@@ -1,7 +1,14 @@
 import React from "react";
 
 /* Components */
-import { ResponsiveDesign, Prototyping, Accessibility, SEO } from "../Animated";
+import {
+  ResponsiveDesign,
+  Prototyping,
+  Accessibility,
+  SEO,
+  DesignToCode,
+  Frontend,
+} from "../Animated";
 
 const ServiceBody = () => {
   return (
@@ -63,6 +70,31 @@ const ServiceBody = () => {
               <p>
                 To be a reachable and engaging website, the implementation must
                 proceed prioritizing SEO support concepts.
+              </p>
+            </div>
+          </div>
+
+          <div className="service_body--card">
+            <div className="img_wrapper scale-2">
+              <DesignToCode />
+            </div>
+            <div>
+              <h1 className="ht_text">Design to Code</h1>
+              <p>
+                If web design is already crafted, I am here to convert Figma,
+                PSD, and Xd templates into well-performed websites.
+              </p>
+            </div>
+          </div>
+
+          <div className="service_body--card">
+            <div className="img_wrapper">
+              <Frontend />
+            </div>
+            <div>
+              <h1 className="ht_text">Front-end Development</h1>
+              <p>
+              I use React.js to build scalable, reusable, maintainable, and to provide fast Single Page Applications.
               </p>
             </div>
           </div>
