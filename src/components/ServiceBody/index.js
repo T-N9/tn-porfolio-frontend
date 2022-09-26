@@ -1,7 +1,7 @@
 import React from "react";
 
 /* Components */
-import { ResponsiveDesign, Prototyping, Accessibility } from "../Animated";
+import { ResponsiveDesign, Prototyping, Accessibility, SEO } from "../Animated";
 
 const ServiceBody = () => {
   return (
@@ -45,9 +45,24 @@ const ServiceBody = () => {
             <div>
               <h1 className="ht_text">Accessibility</h1>
               <p>
-                Nowadays, websites are developed to be accessible by EVERYONE. I
+                {/* Nowadays, websites are developed to be accessible by EVERYONE. I
                 manage my user interface and codes to meet W3C standards and
-                make the best performance.
+                make the best performance. */}
+                Web is for EVERYONE. I manage my user interface and codes to
+                meet W3C standards and make the best performance.
+              </p>
+            </div>
+          </div>
+
+          <div className="service_body--card">
+            <div className="img_wrapper">
+              <SEO />
+            </div>
+            <div>
+              <h1 className="ht_text">Search Engine Optimization</h1>
+              <p>
+                To be a reachable and engaging website, the implementation must
+                proceed prioritizing SEO support concepts.
               </p>
             </div>
           </div>

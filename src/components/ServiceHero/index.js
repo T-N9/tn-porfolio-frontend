@@ -15,7 +15,7 @@ const ServiceHero = () => {
         </h1>
 
         <a href="#services">
-          <button className="downToContent"><i class="gg-arrow-down"></i></button>
+          <button className="downToContent"><i className="gg-arrow-down"></i></button>
         </a>
       </div>
     </section>

@@ -111,10 +111,10 @@
   animation-delay: 100ms !important;
 }
 .delay_200 {
-  animation-delay: 200ms;
+  animation-delay: 200ms !important;
 }
 .delay_300 {
-  animation-delay: 300ms;
+  animation-delay: 300ms !important;
 }
 .delay_400 {
   animation-delay: 400ms;
@@ -157,5 +157,47 @@
 .accessibility_ani_2 {
   transform-origin: center;
   animation: accessibility_2 5000ms alternate ease-in-out infinite;
+}
+
+/* SEO */
+@keyframes seoLen {
+  0% {
+    transform: translate(5px, 15px);
+  }
+
+  30% {
+    transform: translate(10px, 0px);
+  }
+
+  60% {
+    transform: translate(-15px, 10px);
+  }
+
+  100% {
+    transform: translate(5px, 15px);
+  }
+}
+
+@keyframes seoGraph {
+  0% {
+    transform: scaleY(0.5);
+  }
+
+  50% {
+    transform: scaleY(1);
+  }
+
+  100% {
+    transform: scaleY(1.2);
+  }
+}
+
+.seoLen_ani {
+  animation: seoLen 5000ms alternate ease-in-out infinite;
+}
+
+.seoGraph_ani {
+  transform-origin: bottom;
+  animation: seoGraph 5000ms alternate cubic-bezier(0.215, 0.610, 0.355, 1) infinite;
 }
 
