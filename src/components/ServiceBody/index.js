@@ -102,7 +102,7 @@ const ServiceBody = () => {
         </div>
 
         <div className="service_body--promote">
-          <h1>Your goals are my milestones.</h1>
+          <h1 className="ht_text">“ Your goal is my mission. ”</h1>
           <p>
             As a front-end web developer, I make sure that my website has good
             design qualities, from colors, and typography to clean coding and

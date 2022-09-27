@@ -81,9 +81,10 @@
       background-color: white;
       padding: 5px 20px;
       text-align: center;
+      font-family: $font-primary;
 
       @include m-breakpoint-down(small) {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         padding: 5px 5px;
       }
     }
@@ -99,6 +100,7 @@
       }
 
       @include m-breakpoint-down(small) {
+        margin-top: 20px;
         padding: 30px 10px;
         width: 100%;
       }
