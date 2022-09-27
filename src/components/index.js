@@ -18,3 +18,5 @@ export { default as PortfolioProjects } from './PortfolioProjects';
 
 export { default as ServiceHero } from './ServiceHero';
 export { default as ServiceBody } from './ServiceBody';
+
+export { default as AboutHero } from './AboutHero';

@@ -10,10 +10,12 @@
     margin: 3rem 0;
     row-gap: 8rem;
     @include m-breakpoint-down(lmedium) {
+      row-gap: 6rem;
       grid-template-columns: repeat(2, 1fr);
     }
 
     @include m-breakpoint-down(small) {
+      row-gap: 4rem;
       grid-template-columns: repeat(1, 1fr);
     }
   }
@@ -48,11 +50,11 @@
   button {
     display: table;
     margin: auto;
-    margin-top: 6rem;
+    margin-top: 3rem;
   }
 
   &--contact {
-    margin: 10rem auto 0rem auto;
+    margin: 3rem auto 0rem auto;
     display: table;
     background-color: transparent;
     padding: 5rem 3rem;
@@ -63,25 +65,70 @@
     transition: all 300ms ease-in-out;
 
     &:hover {
-        background-color: $primary-color;
-        color: white;
+      background-color: $primary-color;
+      color: white;
+    }
+  }
+
+  &--promote {
+    margin-top: 8rem;
+    @include flex-center;
+    flex-direction: column;
+
+    h1 {
+      position: relative;
+      z-index: 5;
+      background-color: white;
+      padding: 5px 20px;
+      text-align: center;
+
+      @include m-breakpoint-down(small) {
+        font-size: 1.2rem;
+        padding: 5px 5px;
+      }
+    }
+
+    p {
+      margin-top: -25px;
+      border: 3px solid $primary-color;
+      padding: 30px;
+      width: 60%;
+
+      @include m-breakpoint-down(lmedium) {
+        width: 80%;
+      }
+
+      @include m-breakpoint-down(small) {
+        padding: 30px 10px;
+        width: 100%;
+      }
     }
   }
 }
 
 .dark {
-    .service_body {
+  .service_body {
+    &--contact {
+      color: $accent-color;
+      border: 3px solid $accent-color;
 
-        &--contact {
-            color: $accent-color;
-            border: 3px solid $accent-color;
-
-            &:hover {
-                background-color: $accent-color;
-                color: $dark-color;
-            }
-          }
+      &:hover {
+        background-color: $accent-color;
+        color: $dark-color;
+      }
     }
+
+    &--promote {
+
+      h1 {
+        background-color: $dark-color;
+      }
+
+      p {
+        border: 3px solid $accent-color;
+      }
+    }
+  }
 }
 
 .origin_center {

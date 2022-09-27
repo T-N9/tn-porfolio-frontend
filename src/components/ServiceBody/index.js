@@ -94,18 +94,31 @@ const ServiceBody = () => {
             <div>
               <h1 className="ht_text">Front-end Development</h1>
               <p>
-              I use React.js to build scalable, reusable, maintainable, and to provide fast Single Page Applications.
+                I use React.js to build scalable, reusable, maintainable, and to
+                provide fast Single Page Applications.
               </p>
             </div>
           </div>
         </div>
 
+        <div className="service_body--promote">
+          <h1>Your goals are my milestones.</h1>
+          <p>
+            As a front-end web developer, I make sure that my website has good
+            design qualities, from colors, and typography to clean coding and
+            performance. Nowadays, there are so many ways to create web content
+            but to attract users at the very first seconds of your webpage, the
+            content has to be clear and interactive to various devices.
+            <br /><br />
+            My design is simple, minimal, and reachable to users. I build and
+            learn newer technologies to deliver fast and reliable websites.
+            <br /><br />I care about your business values and targeted customers to
+            meet your golden goals for tomorrow.
+          </p>
+        </div>
         <a href="mailto:tenyainmoelwin@gmail.com">
-          <button className="primary_btn">
-            Contact Me
-          </button>
+          <button className="primary_btn">Contact Me</button>
         </a>
-
       </div>
     </section>
   );

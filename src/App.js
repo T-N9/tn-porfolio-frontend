@@ -6,6 +6,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { setCurrentTheme } from "./redux/slices/NavbarSlice";
 import {
   HomePage,
+  AboutPage,
   ContactPage,
   ProjectPage,
   PortfolioPage,
@@ -49,6 +50,7 @@ const App = () => {
       <ScrollToTop>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage/>}/>
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/portfolio/:slug" element={<ProjectPage />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
