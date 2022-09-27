@@ -10,9 +10,9 @@ const Toggler = () => {
 
     return (
         <>
-            <div onClick={() => dispatch(setTheme())} className='nav_toggler'>
+            <button onClick={() => dispatch(setTheme())} className='nav_toggler'>
                 <title>Change Theme</title>
-            </div>
+            </button>
         </>
     )
 }

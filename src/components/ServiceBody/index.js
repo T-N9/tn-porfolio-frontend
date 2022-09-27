@@ -99,6 +99,13 @@ const ServiceBody = () => {
             </div>
           </div>
         </div>
+
+        <a href="mailto:tenyainmoelwin@gmail.com">
+          <button className="primary_btn">
+            Contact Me
+          </button>
+        </a>
+
       </div>
     </section>
   );

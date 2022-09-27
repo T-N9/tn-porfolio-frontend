@@ -52,7 +52,6 @@
   height: calUni(695px) !important;
   border-radius: 20px;
   transition: all 200ms ease !important;
-  cursor: pointer;
 
   @include m-breakpoint-up(xlarge) {
     width: calUni(565px) !important;
@@ -343,7 +342,6 @@
           background-color: rgba(17, 146, 211, 0.1) !important;
           border-radius: 20px;
           transition: all 200ms ease !important;
-          cursor: pointer;
 
           .col_2 {
             .view_pjBtn {

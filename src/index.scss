@@ -1,27 +1,50 @@
-@import './styles/mixins';
-@import './styles/variables';
-@import './styles/animations';
-@import './styles/utilities';
+@import "./styles/mixins";
+@import "./styles/variables";
+@import "./styles/animations";
+@import "./styles/utilities";
 
-@import './components/Navbar/Navbar';
-@import './components/HomeHero/HomeHero';
-@import './components/HomeAbout/HomeAbout';
-@import './components/HomeProjects/HomeProjects';
-@import './components/HomeMotto/HomeMotto';
-@import './components/HomeSkills/HomeSkills';
-@import './components/HomeContact/HomeContact';
-@import './components/Footer/Footer';
+@import "./components/Navbar/Navbar";
+@import "./components/HomeHero/HomeHero";
+@import "./components/HomeAbout/HomeAbout";
+@import "./components/HomeProjects/HomeProjects";
+@import "./components/HomeMotto/HomeMotto";
+@import "./components/HomeSkills/HomeSkills";
+@import "./components/HomeContact/HomeContact";
+@import "./components/Footer/Footer";
 
-@import './components/ContactHero/ContactHero';
+@import "./components/ContactHero/ContactHero";
 
-@import './components/ProjectHero/ProjectHero';
-@import './components/ProjectStatus/ProjectStatus';
-@import './components/ProjectDescription/ProjectDescription';
+@import "./components/ProjectHero/ProjectHero";
+@import "./components/ProjectStatus/ProjectStatus";
+@import "./components/ProjectDescription/ProjectDescription";
 
-@import './components/ServiceHero/ServiceHero';
-@import './components/ServiceBody/ServiceBody';
+@import "./components/ServiceHero/ServiceHero";
+@import "./components/ServiceBody/ServiceBody";
 
-@import './components/Animated/AnimatedSVG';
+@import "./components/Animated/AnimatedSVG";
+
+html,
+body {
+  .main_content {
+    cursor: url(./assets/light-cursor.svg), auto !important;
+  }
+
+  .main_content.dark {
+    cursor: url(./assets/dark-cursor.svg), auto !important;
+  }
+}
+
+a,
+button {
+  cursor: url(./assets/light-cursor-pointer.svg), auto !important;
+}
+
+.dark {
+  a,
+button {
+  cursor: url(./assets/dark-cursor-pointer.svg), auto !important;
+}
+}
 
 /* Box sizing rules */
 *,
@@ -45,8 +68,8 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -91,9 +114,9 @@ select {
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: smooth;
+    scroll-behavior: smooth;
   }
-  
+
   *,
   *::before,
   *::after {
