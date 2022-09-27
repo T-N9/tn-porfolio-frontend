@@ -8,7 +8,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 3rem 0;
-    row-gap: 4rem;
+    row-gap: 8rem;
     @include m-breakpoint-down(lmedium) {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -48,6 +48,7 @@
   button {
     display: table;
     margin: auto;
+    margin-top: 6rem;
   }
 
   &--contact {
@@ -81,4 +82,8 @@
             }
           }
     }
+}
+
+.origin_center {
+  transform-origin: center;
 }
