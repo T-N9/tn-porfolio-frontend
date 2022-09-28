@@ -48,6 +48,11 @@
         border: 1px solid $primary-color;
         display: inline-block;
         max-width: 300px;
+
+        @include m-breakpoint-down(small) {
+          width: 100%;
+          max-width: 100%;
+        }
       }
 
       ul {
