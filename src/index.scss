@@ -24,6 +24,29 @@
 @import "./components/Animated/AnimatedSVG";
 
 @import "./components/AboutHero/AboutHero";
+@import "./components/AboutTimeline/AboutTimeline";
+
+::-moz-selection { /* Code for Firefox */
+  color: $white;
+  background: $primary-color;
+}
+
+::selection {
+  color: $white;
+  background: $primary-color;
+}
+
+.dark {
+  ::-moz-selection { /* Code for Firefox */
+    color: $white;
+    background: $accent-color;
+  }
+  
+  ::selection {
+    color: $white;
+    background: $accent-color;
+  }
+}
 
 html,
 body {

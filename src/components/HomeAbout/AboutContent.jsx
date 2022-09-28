@@ -25,7 +25,7 @@ const AboutContent = () => {
                 music during my spare time.
                 </p>
 
-                <Link to="/tn.dev/about">
+                <Link to="/about">
                     <button className="primary_btn table_center">
                         More about me
                     </button>
