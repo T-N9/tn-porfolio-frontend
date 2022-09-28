@@ -8,7 +8,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 3rem 0;
-    row-gap: 8rem;
+    margin-top: 5rem;
+    row-gap: 5rem;
     @include m-breakpoint-down(lmedium) {
       row-gap: 6rem;
       grid-template-columns: repeat(2, 1fr);
@@ -82,9 +83,12 @@
       padding: 5px 20px;
       text-align: center;
       font-family: $font-primary;
+      transition: background-color 200ms ease-in 50ms;
 
       @include m-breakpoint-down(small) {
-        font-size: 1.5rem;
+        font-size: 4.5rem;
+        font-weight: bold;
+        line-height: 5rem;
         padding: 5px 5px;
       }
     }

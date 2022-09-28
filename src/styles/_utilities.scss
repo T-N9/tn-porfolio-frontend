@@ -88,6 +88,20 @@ h6 {
   margin: auto;
 }
 
+.outlined_title {
+  color: $white !important;
+  -webkit-text-stroke: $primary-color;
+  -webkit-text-stroke-width: 2px;
+}
+
+.dark {
+  .outlined_title {
+    color: $dark-color !important;
+    -webkit-text-stroke: $accent-color;
+    -webkit-text-stroke-width: 2px;
+  }
+}
+
 .dark {
   .ht_text {
     color: $accent-color;
@@ -500,4 +514,10 @@ button {
 
 .scale-2 {
   transform: scale(1.3);
+}
+
+.mt-2 {
+  @include m-breakpoint-down(small) {
+    margin-top: 1rem;
+  }
 }

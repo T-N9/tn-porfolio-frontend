@@ -14,7 +14,7 @@ const ServiceBody = () => {
   return (
     <section className="service_body">
       <div id="services" className="container content_wrapper">
-        <h1 className="title_text center_text">What I do</h1>
+        <h1 className="title_text center_text outlined_title">What I do</h1>
 
         <div className="service_body--grid">
           <div className="service_body--card">
@@ -74,7 +74,7 @@ const ServiceBody = () => {
             </div>
           </div>
 
-          <div className="service_body--card">
+          <div className="service_body--card mt-2">
             <div className="img_wrapper scale-2">
               <DesignToCode />
             </div>
@@ -102,7 +102,7 @@ const ServiceBody = () => {
         </div>
 
         <div className="service_body--promote">
-          <h1 className="ht_text">“ Your goal is my mission. ”</h1>
+          <h1 className="ht_text outlined_title"> Your goal is my mission. </h1>
           <p>
             As a front-end web developer, I make sure that my website has good
             design qualities, from colors, and typography to clean coding and
