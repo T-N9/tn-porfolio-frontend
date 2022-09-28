@@ -1,7 +1,7 @@
 import React from "react";
 
 /* Components */
-import { AboutHero, AboutTimeline, Footer  } from "../components";
+import { AboutHero, AboutTimeline, Footer, HomeMotto  } from "../components";
 
 const AboutPage = () => {
   return (
@@ -9,6 +9,7 @@ const AboutPage = () => {
       <div className="nav_spacer"></div>
       <AboutHero/>
       <AboutTimeline/>
+      <HomeMotto/>
       <Footer/>
     </>
   );

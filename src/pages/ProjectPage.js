@@ -14,6 +14,7 @@ import "css.gg/icons/css/arrow-left-o.css";
 
 const ProjectPage = () => {
   const [slugs, setSlugs] = useState([]);
+  const [loading, setLoading] = useState(false);
   const [nextProject, setNextProject] = useState("");
   const [prevProject, setPrevProject] = useState("");
   const [project, setProject] = useState(null);
@@ -26,18 +27,21 @@ const ProjectPage = () => {
 
   useEffect(() => {
     const query = `*[_type == "projects" ] | order(order asc)`;
-
+    setLoading(true);
     client.fetch(query).then((data) => {
-      data.map((item) => {
-        setSlugs((prev) => [...prev, item.slug.current]);
-        return item;
+      let slugData = data.map((item) => {
+        // setSlugs((prev) => [...prev, item.slug.current]);
+        return item.slug.current;
       });
+
+      setSlugs(slugData)
 
       let my_project = data.filter((item) => {
         return slug === item.slug.current;
       });
 
       setProject(my_project);
+      setLoading(false);
     });
   }, [slug]);
 
@@ -49,8 +53,6 @@ const ProjectPage = () => {
     if (isPrev) {
       setPrevProject(slugs[slugs.indexOf(slug) - 1]);
     }
-
-    console.log(slugs.length);
   }, [slugs, slug]);
 
   let title,
@@ -86,11 +88,11 @@ const ProjectPage = () => {
     url = source.url;
     period = source.period;
     introduction = source.introduction;
-    development = source.development;
-    mockup = urlFor(source.mockup);
-    pandp = source.pandp;
-    designing = source.designing;
-    mockup_d = urlFor(source.mockup_d);
+    development =source.development && source.development;
+    mockup = source.mockup && urlFor(source.mockup);
+    pandp = source.pandp && source.pandp;
+    designing = source.designing && source.designing;
+    mockup_d = source.mockup_d && urlFor(source.mockup_d);
     palette = source?.colors && source?.colors;
     typo = source?.typo && urlFor(source?.typo);
     logo = source?.logo && urlFor(source?.logo);
@@ -99,7 +101,7 @@ const ProjectPage = () => {
   return (
     <>
       <div className="nav_spacer"></div>
-      {project === null ? (
+      {project === null || loading ? (
         <div className="loading_page">
           <i className={`gg-${"spinner"}`}></i>
         </div>
@@ -142,7 +144,7 @@ const ProjectPage = () => {
             </div>
 
             <div>
-              {isNext && (
+              {nextProject !== undefined && (
                 <Link to={`/portfolio/${nextProject}`}>
                   <button className="outlined_btn">
                     <i className="gg-arrow-right-o"></i>

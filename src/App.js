@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import ScrollToTop from "./container/ScrollToTop";
 import { NavBar } from "./components";
 import { useSelector, useDispatch } from "react-redux";
@@ -50,7 +51,7 @@ const App = () => {
       <ScrollToTop>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage/>}/>
+          <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/portfolio/:slug" element={<ProjectPage />} />
           <Route path="/portfolio" element={<PortfolioPage />} />

@@ -16,7 +16,7 @@ const ProjectDescription = (props) => {
     logo,
   } = props;
 
-  const paletteList = palette.map((item) => {
+  const paletteList = palette?.map((item) => {
     let color = item.split(",");
     let code = color[0];
     let name = color[1];
@@ -38,7 +38,10 @@ const ProjectDescription = (props) => {
         <div className="description--introduction container_sm container_y_2">
           <h1 className="title_text">Introduction</h1>
           <div className="block_content">
-            <BlockContent blocks={introduction} />
+            {
+              introduction ? <BlockContent blocks={introduction} /> : <p> Website is online but its case study is in process. </p>
+            }
+            
           </div>
           <a href={url} target="_blank" rel="noreferrer">
             <button className="secondary_btn view_live_btn">
@@ -50,52 +53,67 @@ const ProjectDescription = (props) => {
       </div>
       <div className="container_x_sm container_y_1">
         <div className="description--development container_sm">
-          <h1 className="title_text">Development</h1>
-          <div className="block_content">
-            <BlockContent blocks={development} />
-          </div>
-
-          <img className="mockup_img" src={mockup} alt="mockup" />
+          {development && (
+            <>
+              <h1 className="title_text">Development</h1>
+              <div className="block_content">
+                <BlockContent blocks={development} />
+              </div>
+              {mockup && (
+                <img className="mockup_img" src={mockup} alt="mockup" />
+              )}
+            </>
+          )}
         </div>
       </div>
-      <div className="container_x_sm">
-        <div className="description--development container_sm">
-          <h1 className="title_text_1">Planning and preparation</h1>
-          <div className="block_content">
-            <BlockContent blocks={pandp} />
-          </div>
-        </div>
-      </div>
-      <div className="container_x_sm container_y_2">
-        <div className="description--development container_sm">
-          <h1 className="title_text">Designing</h1>
-          <div className="block_content">
-            <BlockContent blocks={designing} />
-          </div>
 
-          <img className="mockup_img" src={mockup_d} alt="mockup" />
-        </div>
-        {paletteList && (
-          <div className="container_sm container_y_1">
-            <h1 className="title_text_1 text_center">Palette</h1>
-            <div className="palette_wrapper">{paletteList}</div>
+      {pandp && (
+        <>
+          <div className="container_x_sm">
+            <div className="description--development container_sm">
+              <h1 className="title_text_1">Planning and preparation</h1>
+              <div className="block_content">
+                <BlockContent blocks={pandp} />
+              </div>
+            </div>
           </div>
-        )}
+        </>
+      )}
 
-        {typo && (
-          <div className="container_sm no_pad_con container_y_1">
-            <h1 className="title_text_1 text_center typo">Typo</h1>
-            <img src={typo} alt="Typo" />
-          </div>
-        )}
+      {designing && (
+        <>
+          <div className="container_x_sm container_y_2">
+            <div className="description--development container_sm">
+              <h1 className="title_text">Designing</h1>
+              <div className="block_content">
+                <BlockContent blocks={designing} />
+              </div>
 
-        {logo && (
-          <div className="container_sm no_pad_con container_y_1">
-            <h1 className="title_text_1 text_center">Logo</h1>
-            <img className="logo_img" src={logo} alt="logo" />
+              <img className="mockup_img" src={mockup_d} alt="mockup" />
+            </div>
+            {paletteList && (
+              <div className="container_sm container_y_1">
+                <h1 className="title_text_1 text_center">Palette</h1>
+                <div className="palette_wrapper">{paletteList}</div>
+              </div>
+            )}
+
+            {typo && (
+              <div className="container_sm no_pad_con container_y_1">
+                <h1 className="title_text_1 text_center typo">Typo</h1>
+                <img src={typo} alt="Typo" />
+              </div>
+            )}
+
+            {logo && (
+              <div className="container_sm no_pad_con container_y_1">
+                <h1 className="title_text_1 text_center">Logo</h1>
+                <img className="logo_img" src={logo} alt="logo" />
+              </div>
+            )}
           </div>
-        )}
-      </div>
+        </>
+      )}
     </section>
   );
 };
