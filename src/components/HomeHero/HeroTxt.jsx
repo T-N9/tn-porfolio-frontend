@@ -11,11 +11,11 @@ const HeroTxt = () => {
                 loves to <span className="ht_text">craft and build</span> web.
                 </h1>
 
-                <Link to="/contact">
-                    <button className="hero_txt--btn primary_btn">
+                <a href='mailto:tenyainmoelwin@gmail.com'>
+                    <button aria-label='contact tenyain' className="hero_txt--btn primary_btn">
                         Contact me
                     </button>
-                </Link>
+                </a>
             </div> 
         </>
     );

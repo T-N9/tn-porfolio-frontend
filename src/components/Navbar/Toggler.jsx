@@ -10,7 +10,7 @@ const Toggler = () => {
 
     return (
         <>
-            <button onClick={() => dispatch(setTheme())} className='nav_toggler'>
+            <button aria-label='toggle nav' onClick={() => dispatch(setTheme())} className='nav_toggler'>
                 <title>Change Theme</title>
             </button>
         </>
