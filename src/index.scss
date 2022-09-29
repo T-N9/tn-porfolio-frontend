@@ -61,14 +61,6 @@ body {
   }
 }
 
-a {
-  color: $primary-color !important;
-}
-
-.dark a{
-  color : $accent-color !important;
-}
-
 a,
 button {
   cursor: url(./assets/light-cursor-pointer.svg), auto !important;

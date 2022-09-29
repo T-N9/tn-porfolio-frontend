@@ -14,10 +14,13 @@ const Footer = () => {
                 </div>
                 <div className="footer_line">
                     <p>
+                        <span className="ht_text">
                         Designed & Implemented by Te Nyain
                         |
                         &copy; 2022
                         |
+                        </span>
+
                         <Link to="/credits">
                             &nbsp; Credits & Attributions
                         </Link>
