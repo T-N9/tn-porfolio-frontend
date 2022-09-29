@@ -12,6 +12,7 @@ import {
   ProjectPage,
   PortfolioPage,
   ServicePage,
+  CreditPage
 } from "./pages";
 import "css.gg/icons/css/spinner.css";
 
@@ -56,6 +57,7 @@ const App = () => {
           <Route path="/portfolio/:slug" element={<ProjectPage />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/services" element={<ServicePage />} />
+          <Route path="/credits" element={<CreditPage />} />
         </Routes>
       </ScrollToTop>
     </main>

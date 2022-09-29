@@ -21,3 +21,5 @@ export { default as ServiceBody } from './ServiceBody';
 
 export { default as AboutHero } from './AboutHero';
 export { default as AboutTimeline } from './AboutTimeline';
+
+export { default as AllCredits } from './AllCredits';

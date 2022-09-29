@@ -16,7 +16,7 @@ const Footer = () => {
                         |
                         &copy; 2022
                         |
-                        <a href="testing.com">
+                        <a href="/credits">
                             &nbsp; Credits & Attributions
                         </a>
                     </p>
