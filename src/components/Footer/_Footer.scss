@@ -1,4 +1,9 @@
 .footer_page_wrapper {
+ 
+    a {
+        color: white !important;
+    }
+    
     background-image: linear-gradient(
         90deg
         , rgba(17, 146, 211, 0.2) 5%, rgba(17, 146, 211, 0.5) 50%, rgba(17, 146, 211, 0.2) 100%);
@@ -98,6 +103,11 @@
 
 .dark {
     .footer_page_wrapper {
+
+        a {
+            color: white !important;
+        }
+
         background-image: linear-gradient(
         90deg
         , rgba($accent-color, 0.2) 5%, rgba($accent-color, 0.5) 50%, rgba($accent-color, 0.2) 100%);

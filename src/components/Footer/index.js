@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import Greetings from "./Greeting";
 import ReachMe from "./ReachMe";
 
@@ -16,9 +18,9 @@ const Footer = () => {
                         |
                         &copy; 2022
                         |
-                        <a href="/credits">
+                        <Link to="/credits">
                             &nbsp; Credits & Attributions
-                        </a>
+                        </Link>
                     </p>
                 </div>
             </div>

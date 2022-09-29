@@ -10,25 +10,29 @@ const AllCredits = () => {
             rightful owners.
           </h1>
 
-          <div>
-            <p>
+          <ul>
+            <li>
               traditional english letter boxes,{" "}
               <a href="https://www.freepik.com/free-vector/traditional-english-letterboxes-set-red-blue-vintage-mailboxes-old-postboxes-with-letters-isolated-white-background_12699873.htm">
                 Image by pch.vector
               </a>{" "}
               on Freepik
-            </p>
-            <p>
+            </li>
+            <li>
               plastic-toy-blocks-background, Image by{" "}
               <a href="https://www.freepik.com/free-vector/plastic-toy-blocks-background_1170490.htm#query=plastic%20blocks&position=48&from_view=keyword">
                 Freepik
               </a>
-            </p>
+            </li>
 
-            <p>
+            <li>
                 SVG illustrations by <a href="https://illlustrations.co/">Illustrations.co</a>
-            </p>
-          </div>
+            </li>
+
+            <li>
+              UI design and development by <span className="ht_text">Te Nyain Moe Lwin</span> 
+            </li>
+          </ul>
         </div>
       </div>
     </section>

@@ -52,12 +52,21 @@
 html,
 body {
   .main_content {
+    min-height: 100vh;
     cursor: url(./assets/light-cursor.svg), auto !important;
   }
 
   .main_content.dark {
     cursor: url(./assets/dark-cursor.svg), auto !important;
   }
+}
+
+a {
+  color: $primary-color !important;
+}
+
+.dark a{
+  color : $accent-color !important;
 }
 
 a,
