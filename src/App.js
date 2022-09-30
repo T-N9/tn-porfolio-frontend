@@ -51,7 +51,7 @@ const App = () => {
       <Suspense
         fallback={
           <div
-            className={loading ? "loading_page visible" : "loading_page hidden"}
+            className={"loading loading_page"}
           >
             <i className={`gg-${"spinner"}`}></i>
           </div>
