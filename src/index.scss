@@ -73,6 +73,25 @@ button {
 }
 }
 
+strong {
+  color: $primary-color;
+}
+
+.dark strong {
+  color: $accent-color;
+}
+
+code {
+  padding: 10px;
+  background-color: $light-color;
+  border-radius: 5px;
+  line-height: 3;
+}
+
+.dark code {
+  background-color: #333;
+}
+
 /* Box sizing rules */
 *,
 *::before,
