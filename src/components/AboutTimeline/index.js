@@ -80,7 +80,17 @@ const AboutTimeline = () => {
                 <h1 className="ht_text">2020</h1>
                 <p>Covid Outbreak</p>
                 <ul>
-                  <li>Started learning Web design & development</li>
+                  <li>
+                    Started learning Web design & development{" "}
+                    <a
+                      className="ht_text"
+                      href="https://www.facebook.com/mmsoss"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      @MMSIT
+                    </a>
+                  </li>
                   <li>
                     Continued self-study Software Engineering and Communications
                   </li>
