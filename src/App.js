@@ -14,6 +14,7 @@ const ProjectPage = React.lazy(() => import("./pages/ProjectPage"));
 const PortfolioPage = React.lazy(() => import("./pages/PortfolioPage"));
 const ServicePage = React.lazy(() => import("./pages/ServicePage"));
 const CreditPage = React.lazy(() => import("./pages/CreditPage"));
+const SimplePage = React.lazy(() => import("./pages/SimplePage"));
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -66,6 +67,7 @@ const App = () => {
             <Route path="/portfolio" element={<PortfolioPage />} />
             <Route path="/services" element={<ServicePage />} />
             <Route path="/credits" element={<CreditPage />} />
+            <Route path="/simplify" element={<SimplePage />} />
           </Routes>
         </ScrollToTop>
       </Suspense>

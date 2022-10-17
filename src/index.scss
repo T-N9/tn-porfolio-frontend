@@ -27,7 +27,8 @@
 @import "./components/AboutTimeline/AboutTimeline";
 @import "./components/AllCredits/AllCredits";
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+  /* Code for Firefox */
   color: $white;
   background: $primary-color;
 }
@@ -38,11 +39,12 @@
 }
 
 .dark {
-  ::-moz-selection { /* Code for Firefox */
+  ::-moz-selection {
+    /* Code for Firefox */
     color: $white;
     background: $accent-color;
   }
-  
+
   ::selection {
     color: $white;
     background: $accent-color;
@@ -68,9 +70,9 @@ button {
 
 .dark {
   a,
-button {
-  cursor: url(./assets/dark-cursor-pointer.svg), auto !important;
-}
+  button {
+    cursor: url(./assets/dark-cursor-pointer.svg), auto !important;
+  }
 }
 
 strong {
@@ -171,4 +173,35 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: smooth !important;
   }
+}
+
+/* Simplify.css */
+.simple_container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  h1 {
+    margin-bottom: 20px;
+  }
+}
+
+.simple_skills p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.simple_states p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.simple_projects p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
 }
