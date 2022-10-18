@@ -88,20 +88,6 @@ h6 {
   margin: auto;
 }
 
-.outlined_title {
-  color: $white !important;
-  -webkit-text-stroke: $primary-color;
-  -webkit-text-stroke-width: 2px;
-}
-
-.dark {
-  .outlined_title {
-    color: $dark-color !important;
-    -webkit-text-stroke: $accent-color;
-    -webkit-text-stroke-width: 2px;
-  }
-}
-
 .dark {
   .ht_text {
     color: $accent-color !important;
@@ -179,6 +165,20 @@ h6 {
 .container_y_3 {
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.outlined_title {
+  color: $white !important;
+  -webkit-text-stroke: $primary-color;
+  -webkit-text-stroke-width: 2px;
+}
+
+.dark {
+  .outlined_title {
+    color: $dark-color !important;
+    -webkit-text-stroke: $accent-color;
+    -webkit-text-stroke-width: 2px;
+  }
 }
 
 *,

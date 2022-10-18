@@ -1,6 +1,5 @@
 import React, { useState, useEffect, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
-import { useLocation } from "react-router-dom";
 import ScrollToTop from "./container/ScrollToTop";
 import { NavBar } from "./components";
 import { useSelector, useDispatch } from "react-redux";
@@ -51,9 +50,7 @@ const App = () => {
 
       <Suspense
         fallback={
-          <div
-            className={"loading loading_page"}
-          >
+          <div className={"loading loading_page"}>
             <i className={`gg-${"spinner"}`}></i>
           </div>
         }
