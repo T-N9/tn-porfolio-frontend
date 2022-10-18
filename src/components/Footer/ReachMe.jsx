@@ -32,9 +32,7 @@ const ReachMe = () => {
           </a>
         </div>
 
-        <ReactMarkdown>
-          ![](https://komarev.com/ghpvc/?username=T-N9)
-        </ReactMarkdown>
+        <img width={113} height={20} src="https://komarev.com/ghpvc/?username=T-N9" alt=""/>
       </div>
     </>
   );
