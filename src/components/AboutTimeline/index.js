@@ -12,7 +12,7 @@ const AboutTimeline = () => {
               </div>
 
               <div className="description">
-                <h1 className="ht_text">2015-1016</h1>
+                <h1 className="ht_text">2015-2016</h1>
                 <p>Passed Matriculation Examination</p>
               </div>
             </div>
@@ -22,7 +22,7 @@ const AboutTimeline = () => {
               </div>
 
               <div className="description">
-                <h1 className="ht_text">2016-1017</h1>
+                <h1 className="ht_text">2016-2017</h1>
                 <p>
                   UCSH - CS 1<sup>st</sup> year
                 </p>
@@ -41,7 +41,7 @@ const AboutTimeline = () => {
               </div>
 
               <div className="description">
-                <h1 className="ht_text">2017-1018</h1>
+                <h1 className="ht_text">2017-2018</h1>
                 <p>
                   UCSH - CS 2<sup>nd</sup> year
                 </p>
@@ -59,7 +59,7 @@ const AboutTimeline = () => {
               </div>
 
               <div className="description">
-                <h1 className="ht_text">2018-1019</h1>
+                <h1 className="ht_text">2018-2019</h1>
                 <p>
                   UCSH - CS 3<sup>rd</sup> year
                 </p>
