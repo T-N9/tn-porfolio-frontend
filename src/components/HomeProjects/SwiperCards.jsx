@@ -29,7 +29,7 @@ const SwiperCards = () => {
     const { title, description, icon, category, slug } = project;
     return (
       <SwiperSlide key={nanoid()}>
-        <Link to={`/portfolio/${slug.current}`}>
+        <Link to={`/works/${slug.current}`}>
           <ProjectCard
             title={title}
             desc={description}
