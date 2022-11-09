@@ -305,6 +305,22 @@
     height: 100%;
   }
 
+  .hero_txt {
+    font-weight: 800;
+    font-family: $font-primary !important;
+    font-size: 2rem;
+    margin-bottom: 0;
+    @include m-breakpoint-down(lmedium) {
+      font-size: 1.865rem;
+
+  }
+
+  @include m-breakpoint-down(small) {
+      font-size: 2rem;
+      padding: 20px;
+  }
+  }
+
   h1 {
     margin-bottom: 5rem;
     text-align: center;
