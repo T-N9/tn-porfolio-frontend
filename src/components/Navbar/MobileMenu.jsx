@@ -24,8 +24,8 @@ const MobileMenu = () => {
                         </Link>
                     </li>
                     <li onClick={toggleClick} className="nav_item">
-                        <Link to="/portfolio">
-                            Portfolio
+                        <Link to="/works">
+                            Works
                         </Link>
                     </li>
                     <li onClick={toggleClick} className="nav_item">

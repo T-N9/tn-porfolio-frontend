@@ -8,14 +8,14 @@ const HeroTxt = () => {
                 <h1 className="hero_txt--text">
                 Hello there, <br className="hide_on_desktop"/> I am <span className="ht_text">TeNyain</span>, <br className="hide_on_mobile"/>
                 a <span className="ht_text">front-end</span> developer who
-                loves to <span className="ht_text">craft and build</span> web.
+                delivers <span className="ht_text">fast and reliable</span> websites.
                 </h1>
 
-                <a href='mailto:tenyainmoelwin@gmail.com'>
+                <Link to='/works'>
                     <button aria-label='contact tenyain' className="hero_txt--btn primary_btn">
-                        Contact me
+                        View works
                     </button>
-                </a>
+                </Link>
             </div> 
         </>
     );

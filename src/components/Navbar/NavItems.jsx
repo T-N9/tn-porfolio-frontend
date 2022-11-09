@@ -11,8 +11,8 @@ const NavItems = () => {
                     </Link>
                 </li>
                 <li className='nav_item link_hover'>
-                    <Link to="/portfolio">
-                        Portfolio
+                    <Link to="/works">
+                        Works
                     </Link>
                 </li>
                 <li className='nav_item link_hover'>
