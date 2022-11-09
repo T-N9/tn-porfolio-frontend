@@ -20,16 +20,18 @@
 
     &--text {
         position: relative;
-        font-size: 4rem;
+        font-size: 2rem;
         text-align: center;
         z-index: 500;
+        font-family: $font-primary;
+        font-weight: 800;
 
         @include m-breakpoint-down(lmedium) {
-            font-size: 3rem;
+            font-size: 1.865rem;
         }
 
         @include m-breakpoint-down(small) {
-            font-size: 3.5rem;
+            font-size: 2rem;
             padding: 20px;
         }
     }
