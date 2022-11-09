@@ -3,6 +3,7 @@ import React from "react";
 const AboutTimeline = () => {
   return (
     <section className="about-timeline">
+      <h1 className="title_text center_text">My Journey</h1>
       <div className="container">
         <div>
           <div className="about-timeline--content">

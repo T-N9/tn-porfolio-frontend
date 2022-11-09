@@ -6,7 +6,7 @@ const HomePage = () => {
         <>
            <div className="nav_spacer"></div>
             <HomeHero/> 
-            <HomeAbout/>
+            {/* <HomeAbout/> */}
             <div id="portfolio">
                 <HomeProject/>
             </div>
