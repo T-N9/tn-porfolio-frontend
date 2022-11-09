@@ -1,33 +1,47 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
+
+
+const pages = [
+  {
+    name: "Home",
+    route: "/",
+  },
+  {
+    name: "About",
+    route: "/about",
+  },
+  {
+    name: "Works",
+    route: "/works",
+  },
+  {
+    name: "Services",
+    route: "/services",
+  },
+  {
+    name: "Contact",
+    route: "/contact",
+  },
+];
 
 const NavItems = () => {
-    return (
-        <>
-            <ul className='nav_items'>
-                <li className='nav_item link_hover'>
-                    <Link to="/about">
-                        About
-                    </Link>
-                </li>
-                <li className='nav_item link_hover'>
-                    <Link to="/works">
-                        Works
-                    </Link>
-                </li>
-                <li className='nav_item link_hover'>
-                    <Link to="/services">
-                        Services
-                    </Link>
-                </li>
-                <li className='nav_item link_hover'>
-                    <Link to="/contact">
-                        Contact
-                    </Link>
-                </li>
-            </ul>
-        </>
-    )
-}
+  const { currentPage } = useSelector((state) => state.navBar);
+
+  return (
+    <>
+      <ul className="nav_items">
+        {pages.map((page, index) => {
+          return (
+            <li key={index} className={`nav_item link_hover ${currentPage === page.name && 'ht_text'}`}>
+              <Link to={page.route}>{page.name}</Link>
+            </li>
+          );
+        })}
+      </ul>
+    </>
+  );
+};
 
 export default NavItems;

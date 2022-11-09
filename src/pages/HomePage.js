@@ -1,7 +1,19 @@
-import React from 'react';
-import { HomeHero, HomeAbout, HomeProject, HomeMotto, HomeSkills, HomeContact, Footer } from '../components';
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { setCurrentPage } from '../redux/slices/NavbarSlice';
+
+/* Components */
+import { HomeHero, HomeProject, HomeMotto, HomeSkills, HomeContact, Footer } from '../components';
+
 
 const HomePage = () => {
+
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(setCurrentPage('Home'))
+    }, [])
+
     return (
         <>
            <div className="nav_spacer"></div>

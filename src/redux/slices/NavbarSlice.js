@@ -4,7 +4,8 @@ export const navBarSlice = createSlice({
     name : 'navBar',
     initialState : {
         active : false,
-        theme : localStorage.getItem('theme') 
+        theme : localStorage.getItem('theme') ,
+        currentPage : ''
     },
     reducers : {
         setActive : (state) => {
@@ -15,9 +16,12 @@ export const navBarSlice = createSlice({
         },
         setCurrentTheme : (state, action) => {
             state.theme = action.payload;
+        },
+        setCurrentPage : (state, action) => {
+            state.currentPage = action.payload;
         }
     }
 });
 
-export const { setActive, setTheme, setCurrentTheme } = navBarSlice.actions;
+export const { setActive, setTheme, setCurrentTheme, setCurrentPage } = navBarSlice.actions;
 export default navBarSlice.reducer;
