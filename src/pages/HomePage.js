@@ -5,7 +5,6 @@ import { setCurrentPage } from '../redux/slices/NavbarSlice';
 /* Components */
 import { HomeHero, HomeProject, HomeMotto, HomeSkills, HomeContact, Footer } from '../components';
 
-
 const HomePage = () => {
 
     const dispatch = useDispatch();
