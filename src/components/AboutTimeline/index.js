@@ -129,7 +129,7 @@ const AboutTimeline = () => {
                 <h1 className="ht_text">2022 - present</h1>
                 <p>On Job Training</p>
                 <ul>
-                  <li>4 months of OJT at Myanmar High Society</li>
+                  <li>4 months of OJT at <b>Myanmar High Society</b></li>
 
                   <li>
                     Preparation for JLPT + ITPEC Fundamental Engineering
