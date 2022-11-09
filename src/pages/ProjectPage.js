@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { setCurrentPage } from "../redux/slices/NavbarSlice";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { client, urlFor } from "../client";
@@ -24,6 +26,12 @@ const ProjectPage = () => {
 
   let isPrev = projectNo > 1;
   let isNext = projectNo < slugs.length + 1;
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(setCurrentPage("Works"));
+  }, []);
 
   useEffect(() => {
     const query = `*[_type == "projects" ] | order(order asc)`;
