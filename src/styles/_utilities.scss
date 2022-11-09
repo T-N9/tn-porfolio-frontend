@@ -91,6 +91,11 @@ h6 {
 .dark {
   .ht_text {
     color: $accent-color !important;
+
+    a {
+      color: $accent-color !important;
+
+    }
   }
 
   h1,

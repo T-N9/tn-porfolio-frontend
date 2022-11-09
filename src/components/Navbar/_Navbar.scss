@@ -182,6 +182,13 @@
 .dark {
   .nav_com_wrapper {
     background-color: rgba($dark-color, 0.5);
+
+    .nav_item {
+      a {
+        color: $light-color ;
+      }
+
+    }
     .nav_toggler {
       border: 1px solid $white;
       background-color: $dark-color;
