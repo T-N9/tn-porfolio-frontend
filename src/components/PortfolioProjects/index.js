@@ -21,7 +21,7 @@ const PortfolioProjects = () => {
         projectList = projects.map( project => {
             const { title, description , icon, category, slug} = project;
             return (
-                <Link key={nanoid()} to={`/portfolio/${slug.current}`}>
+                <Link key={nanoid()} to={`/works/${slug.current}`}>
                     <ProjectCard
                         title = {title}
                         desc = {description}
