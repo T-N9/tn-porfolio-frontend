@@ -1,11 +1,52 @@
 #portfolio {
-
   @include m-breakpoint-down(large) {
     margin-top: 15rem;
   }
 
   @include m-breakpoint-down(small) {
     margin-top: 11rem;
+  }
+
+  .swiper-slide {
+    display: inline-block;
+    background-color: rgba(17, 146, 211, 0.1) !important;
+
+    height: calUni(695px) !important;
+    border-radius: 20px;
+    transition: all 200ms ease !important;
+
+    @include m-breakpoint-up(xlarge) {
+      width: calUni(565px) !important;
+    }
+
+    @include m-breakpoint-down(large) {
+      height: auto !important;
+    }
+
+    &:hover {
+      box-shadow: rgba($dark-color, 0.3) 0px 2px 5px -1px,
+        rgba($dark-color, 0.3) 0px 1px 3px -1px;
+    }
+  }
+
+  .swiper {
+    overflow: visible !important;
+    width: 86vw;
+    max-width: 120rem;
+    margin-right: auto;
+    margin-left: auto;
+    touch-action: pan-y;
+    padding: calUni(20px) 0 calUni(80px) 0 !important;
+    margin-top: 3rem;
+  }
+
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $primary-color;
   }
 }
 
@@ -44,28 +85,6 @@
   }
 }
 
-.swiper-slide {
-  display: inline-block;
-  background-color: rgba(17, 146, 211, 0.1) !important;
-
-  height: calUni(695px) !important;
-  border-radius: 20px;
-  transition: all 200ms ease !important;
-
-  @include m-breakpoint-up(xlarge) {
-    width: calUni(565px) !important;
-  }
-
-  @include m-breakpoint-down(large) {
-    height: auto !important;
-  }
-
-  &:hover {
-    box-shadow: rgba($dark-color, 0.3) 0px 2px 5px -1px,
-      rgba($dark-color, 0.3) 0px 1px 3px -1px;
-  }
-}
-
 .dark {
   .swiper-slide {
     &:hover {
@@ -73,26 +92,6 @@
         rgba($accent-color, 0.5) 0px 1px 3px -1px;
     }
   }
-}
-
-.swiper {
-  overflow: visible !important;
-  width: 86vw;
-  max-width: 120rem;
-  margin-right: auto;
-  margin-left: auto;
-  touch-action: pan-y;
-  padding: calUni(20px) 0 calUni(80px) 0 !important;
-  margin-top: 3rem;
-}
-
-.swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
-}
-
-.swiper-pagination-bullet-active {
-  background-color: $primary-color;
 }
 
 .dark {
@@ -139,7 +138,6 @@
     .projectCard--image {
       img {
         transform: scale(1.0125);
-
       }
 
       @include m-breakpoint-down(large) {
@@ -266,7 +264,6 @@
     }
 
     .category_tag {
-
       background-color: $dark-color;
       color: $accent-color;
     }
@@ -312,13 +309,12 @@
     margin-bottom: 0;
     @include m-breakpoint-down(lmedium) {
       font-size: 1.865rem;
+    }
 
-  }
-
-  @include m-breakpoint-down(small) {
+    @include m-breakpoint-down(small) {
       font-size: 2rem;
       padding: 20px;
-  }
+    }
   }
 
   h1 {

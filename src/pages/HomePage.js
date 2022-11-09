@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { setCurrentPage } from '../redux/slices/NavbarSlice';
 
 /* Components */
-import { HomeHero, HomeProject, HomeMotto, HomeSkills, HomeContact, Footer } from '../components';
+import { HomeHero, HomeProject, HomeMotto, HomeSkills, HomeContact,Testimonials, Footer } from '../components';
 
 const HomePage = () => {
 
@@ -21,7 +21,8 @@ const HomePage = () => {
             <div id="portfolio">
                 <HomeProject/>
             </div>
-            <HomeMotto/>
+            <Testimonials/>
+            {/* <HomeMotto/> */}
             <HomeSkills/>
             <HomeContact/>
             <Footer/>
