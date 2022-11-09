@@ -14,8 +14,8 @@ const AboutContent = () => {
         </p>
 
         <p className="quote_para center_text">
-          “ My goal is to deliver a front-end stack from scratch to
-          well-performed websites. ”
+          “My goal is to deliver a front-end stack from scratch to
+          well-performed websites.”
         </p>
 
         <p className="lg_para">
