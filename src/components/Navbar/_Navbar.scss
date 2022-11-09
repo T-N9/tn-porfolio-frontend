@@ -77,6 +77,18 @@
         display: table;
         margin: auto;
       }
+
+      i {
+        position: absolute;
+        right: -35px;
+        top: 50%;
+        transform: translateY(-50%) rotate(-90deg);
+        color: $primary-color;
+
+        @include m-breakpoint-down(lmedium) {
+          color: $light-color;
+        }
+      }
     }
 
     .nav_ham {
@@ -192,6 +204,10 @@
     .nav_toggler {
       border: 1px solid $white;
       background-color: $dark-color;
+
+      i {
+        color: $accent-color;
+      }
 
       &::before {
         left: 19px;
