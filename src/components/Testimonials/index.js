@@ -22,24 +22,24 @@ const data = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas accusantium suscipit aliquid, aut eum sequi assumenda excepturi accusamus magnam quod doloremque? Omnis autem nesciunt ipsam deserunt debitis ex cumque obcaecati.",
   },
   {
-    name: "Kaung Htet",
+    name: "David",
     country: "Myanmar",
     position: "Front-end developer",
     saying:
       "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   },
   {
-    name: "Nayyi",
+    name: "Michael",
     country: "Japan",
     position: "Senior Programmer",
     saying:
       "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. sunt in culpa qui officia deserunt mollit anim id est laborum.",
   },
   {
-    name: "Hein Htet",
+    name: "Gabriel",
     country: "Myanmar",
     position: "Instructor",
-    company: "MMSIT",
+    company: "Lorem Media",
     saying:
       "Massa tincidunt dui ut ornare. Sed elementum tempus egestas sed sed risus pretium quam. In eu mi bibendum neque egestas congue. Risus commodo viverra maecenas accumsan.",
   },
