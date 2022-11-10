@@ -67,13 +67,13 @@
             @include m-breakpoint-down(large) {
                 transform: scale(0.8);
                 top: unset;
-                bottom: -15.375rem;
+                bottom: -12.375rem;
                 right: calUni(-22px);
             }
 
             @include m-breakpoint-down(small) {
                 transform: scale(0.7);
-                bottom: -19.375rem;
+                bottom: -12.375rem;
                 right: calUni(-35px);
             }
         }
