@@ -1,6 +1,9 @@
 .testimonials {
   margin: 5rem 0;
   margin-bottom: 10rem;
+  padding: 50px 0;
+  background-color: rgba($light-color, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 
   .card_wrapper {
     margin-top: 2rem;
@@ -14,6 +17,7 @@
     }
 
     .card {
+      background-color: white;
       user-select: none;
       pointer-events: none;
       box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -43,7 +47,7 @@
 
       .card {
         border-left: 5px solid $accent-color;
-
+        background-color: $dark-color;
         .saying {
           &::first-letter {
             color: $accent-color;
