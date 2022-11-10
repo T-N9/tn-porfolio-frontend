@@ -31,6 +31,10 @@
           font-weight: 800;
           color: $primary-color;
         }
+
+        @include m-breakpoint-down(small) {
+          font-size: 1rem;
+        }
       }
 
       .info {
