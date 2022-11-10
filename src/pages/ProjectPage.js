@@ -143,7 +143,7 @@ const ProjectPage = () => {
           <div className="button_bar container_y_2 container_sm">
             <div>
               {isPrev && (
-                <Link to={`/portfolio/${prevProject}`}>
+                <Link to={`/works/${prevProject}`}>
                   <button className="outlined_btn">
                     <i className="gg-arrow-left-o"></i>
                   </button>
@@ -153,7 +153,7 @@ const ProjectPage = () => {
 
             <div>
               {nextProject !== undefined && (
-                <Link to={`/portfolio/${nextProject}`}>
+                <Link to={`/works/${nextProject}`}>
                   <button className="outlined_btn">
                     <i className="gg-arrow-right-o"></i>
                   </button>
