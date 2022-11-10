@@ -98,6 +98,11 @@
   .swiper-pagination-bullet-active {
     background-color: $accent-color;
   }
+  #portfolio {
+    .swiper-pagination-bullet-active {
+      background-color: $accent-color !important;
+    }
+  }
   .portfolio {
     &--header {
       .header_btn {
