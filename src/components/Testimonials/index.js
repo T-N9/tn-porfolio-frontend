@@ -14,8 +14,8 @@ import Card from "./Card";
 
 const data = [
   {
-    name: "Chen",
-    company: "BTBB",
+    name: "Chris",
+    company: "LOR Media",
     country: "USA",
     position: "Business Owner",
     saying:
@@ -50,7 +50,7 @@ const Testimonials = () => {
     <section className="testimonials">
       <div className="container_sm">
         <h1 className="title_text text_center">What they say</h1>
-        <p className="text_center">
+        <p className="text_center desc_text">
           Things my mentors and seniors talk about me.
         </p>
 
