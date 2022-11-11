@@ -54,7 +54,7 @@
 
 .dark {
   .testimonials {
-    background-color: $dark-color;
+    background-color: rgba($dark-color,0.1) ;
     .card_wrapper {
 
       .card {
