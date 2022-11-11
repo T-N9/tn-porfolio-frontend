@@ -3,9 +3,35 @@
   margin-bottom: 10rem;
   padding: 50px 0;
   background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
   background-image: url("https://www.transparenttextures.com/patterns/grid-me.png");
   background-attachment: fixed;
+  position: relative;
+
+  .warn-top {
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $warning-color;
+    font-weight: 800;
+    @include m-breakpoint-down(small) {
+      font-size: 1rem;
+    }
+  }
+
+  .warn-bottom {
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $warning-color;
+    font-weight: 800;
+    @include m-breakpoint-down(small) {
+      font-size: 1rem;
+    }
+  }
 
   .desc_text {
     font-weight: 600;
@@ -54,9 +80,8 @@
 
 .dark {
   .testimonials {
-    background-color: rgba($dark-color,0.1) ;
+    background-color: rgba($dark-color, 0.1);
     .card_wrapper {
-
       .card {
         border-left: 5px solid $accent-color;
         background-color: $dark-color;

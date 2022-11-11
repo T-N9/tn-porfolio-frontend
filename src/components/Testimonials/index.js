@@ -48,6 +48,9 @@ const data = [
 const Testimonials = () => {
   return (
     <section className="testimonials">
+      <div className="warn-top">
+        🚧 Section under construction. 🚧
+      </div>
       <div className="container_sm">
         <h1 className="title_text text_center">What they say</h1>
         <p className="text_center desc_text">
@@ -87,6 +90,9 @@ const Testimonials = () => {
             })}
           </Swiper>
         </div>
+      </div>
+      <div className="warn-bottom">
+        🚧 Section under construction. 🚧
       </div>
     </section>
   );
