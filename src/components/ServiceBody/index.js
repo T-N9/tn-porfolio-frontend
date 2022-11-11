@@ -101,6 +101,8 @@ const ServiceBody = () => {
           </div>
         </div>
 
+        <div className="separator"></div>
+
         <div className="service_body--promote">
           <h1 className="ht_text outlined_title"> Your goal is my mission. </h1>
           <p>
@@ -109,10 +111,12 @@ const ServiceBody = () => {
             performance. Nowadays, there are so many ways to create web content
             but to attract users at the very first seconds of your webpage, the
             content has to be clear and interactive to various devices.
-            <br /><br />
+            <br />
+            <br />
             My design is simple, minimal, and reachable to users. I build and
             learn newer technologies to deliver fast and reliable websites.
-            <br /><br />I care about your business values and targeted customers to
+            <br />
+            <br />I care about your business values and targeted customers to
             meet your golden goals for tomorrow.
           </p>
         </div>
