@@ -20,7 +20,7 @@ const AboutPage = () => {
       <HomeAbout/>
       <AboutTimeline/>
       <HomeMotto/>
-      <Testimonials/>
+      {/* <Testimonials/> */}
       <Footer/>
     </>
   );
