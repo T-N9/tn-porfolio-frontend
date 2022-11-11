@@ -80,7 +80,7 @@ const Testimonials = () => {
           >
             {data.map((person, index) => {
               return (
-                <SwiperSlide>
+                <SwiperSlide key={index}>
                   <Card person={person} />
                 </SwiperSlide>
               );

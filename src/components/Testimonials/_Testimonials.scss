@@ -2,10 +2,13 @@
   margin: 5rem 0;
   margin-bottom: 10rem;
   padding: 50px 0;
-  background-color: rgba($light-color, 0.1);
+  background-color: white;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  background-image: url("https://www.transparenttextures.com/patterns/grid-me.png");
+  background-attachment: fixed;
 
   .desc_text {
+    font-weight: 600;
     @include m-breakpoint-down(small) {
       font-size: 1rem;
     }
@@ -51,7 +54,7 @@
 
 .dark {
   .testimonials {
-
+    background-color: $dark-color;
     .card_wrapper {
 
       .card {
