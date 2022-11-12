@@ -9,7 +9,9 @@ const HeroImg = () => {
                     <img className="hero_img--image" src={heroImg} alt="tenyain with a plane" loading='lazy'/>
                     <span className="squares square_1"></span>
                     <span className="squares square_2"></span>
+                    <p>トリウム浜田</p>
                 </div>
+
             </div>
         </>
     );

@@ -5,6 +5,21 @@
     padding: 2rem 0;
   }
 
+  p {
+    position: absolute;
+    font-weight: 800;
+    z-index: 500;
+    bottom: 100px;
+    left: 50px;
+    color: white;
+    font-size: 0.8rem;
+
+    @include m-breakpoint-down(small) {
+      bottom: 80px;
+      font-size: 0.5rem;
+    }
+  }
+
   .hero_page {
     @include flex-center;
 
