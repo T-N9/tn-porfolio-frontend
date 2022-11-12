@@ -2,7 +2,7 @@
   margin: 5rem 0;
   margin-bottom: 10rem;
   padding: 50px 0;
-  background-color: white;
+  background-color: rgba($light-color,0.2) ;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
     rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
   background-image: url("https://www.transparenttextures.com/patterns/grid-me.png");
@@ -80,7 +80,7 @@
 
 .dark {
   .testimonials {
-    background-color: rgba($dark-color, 0.1);
+    background-color: rgba(#333, 0.2);
     .card_wrapper {
       .card {
         border-left: 5px solid $accent-color;

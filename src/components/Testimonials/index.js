@@ -14,6 +14,14 @@ import Card from "./Card";
 
 const data = [
   {
+    name: "Hein Htet",
+    country: "Myanmar",
+    position: "Instructor",
+    company: "MMSIT",
+    saying:
+      "Te Nyain is a well-trained student who took the \"Special Web Design\" course from us. He is specialized in Front-end development and delivering trustworthy interactive websites to his consumers.",
+  },
+  {
     name: "Chris",
     company: "LOR Media",
     country: "USA",
@@ -35,22 +43,11 @@ const data = [
     saying:
       "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. sunt in culpa qui officia deserunt mollit anim id est laborum.",
   },
-  {
-    name: "Gabriel",
-    country: "Myanmar",
-    position: "Instructor",
-    company: "Lorem Media",
-    saying:
-      "Massa tincidunt dui ut ornare. Sed elementum tempus egestas sed sed risus pretium quam. In eu mi bibendum neque egestas congue. Risus commodo viverra maecenas accumsan.",
-  },
 ];
 
 const Testimonials = () => {
   return (
     <section className="testimonials">
-      <div className="warn-top">
-        🚧 Section under construction. 🚧
-      </div>
       <div className="container_sm">
         <h1 className="title_text text_center">What they say</h1>
         <p className="text_center desc_text">
@@ -90,9 +87,6 @@ const Testimonials = () => {
             })}
           </Swiper>
         </div>
-      </div>
-      <div className="warn-bottom">
-        🚧 Section under construction. 🚧
       </div>
     </section>
   );
