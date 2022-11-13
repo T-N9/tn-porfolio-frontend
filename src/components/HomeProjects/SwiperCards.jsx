@@ -25,7 +25,7 @@ const SwiperCards = () => {
     // console.log(projects);
   }
 
-  const ProjectCards = projects.map((project) => {
+  const ProjectCards = projects.slice(0,3).map((project) => {
     const { title, description, icon, category, slug } = project;
     return (
       <SwiperSlide key={nanoid()}>
