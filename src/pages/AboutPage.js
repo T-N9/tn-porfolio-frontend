@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { setCurrentPage } from '../redux/slices/NavbarSlice';
 
 /* Components */
-import { AboutHero, AboutTimeline, Footer, HomeMotto, HomeAbout, Testimonials  } from "../components";
+import { AboutHero, AboutTimeline, Footer, HomeMotto, HomeAbout, Testimonials, AboutWriting  } from "../components";
 
 const AboutPage = () => {
 
@@ -21,6 +21,7 @@ const AboutPage = () => {
       <AboutTimeline/>
       <HomeMotto/>
       <Testimonials/>
+      <AboutWriting/>
       <Footer/>
     </>
   );
