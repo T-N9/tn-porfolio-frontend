@@ -7,7 +7,7 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
 // import required modules
-import { FreeMode, Pagination } from "swiper";
+import { FreeMode, Pagination, Autoplay } from "swiper";
 
 /* Component */
 import Card from "./Card";
@@ -58,11 +58,15 @@ const Testimonials = () => {
           <div className="card_wrapper">
             <Swiper
               spaceBetween={30}
-              freeMode={true}
               pagination={{
                 clickable: true,
               }}
-              modules={[FreeMode, Pagination]}
+              autoplay={{
+                delay: 6000,
+                disableOnInteraction: false,
+              }}
+              loop={true}
+              modules={[FreeMode, Pagination, Autoplay]}
               className="mySwiper"
               breakpoints={{
                 640: {
