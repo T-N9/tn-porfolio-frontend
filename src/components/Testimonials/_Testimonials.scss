@@ -1,13 +1,35 @@
 .testimonials {
   margin: 5rem 0;
   margin-bottom: 10rem;
-  padding: 50px 0;
-  background-color: rgba($light-color,0.2) ;
+
+  background-color: rgba($light-color, 0.2);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
     rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
-  background-image: url("https://www.transparenttextures.com/patterns/grid-me.png");
+  // background-image: url("https://www.transparenttextures.com/patterns/grid-me.png");
   background-attachment: fixed;
   position: relative;
+
+  .background_div {
+    background-attachment: fixed;
+    padding: 50px 0;
+    background-image: radial-gradient(
+      circle at top left,
+      #E5E5E5 0%,
+      #E5E5E5 2%,
+      #F6F6F6 2%,
+      #F6F6F6 23%,
+      #F9F9F9 23%,
+      #F9F9F9 55%,
+      #FCFCFC 55%,
+      #FCFCFC 80%,
+      #42C0FF 80%,
+      #42C0FF 86%,
+      #26A8EA 86%,
+      #26A8EA 96%,
+      #1192D3 96%,
+      #1192D3 100%
+    );
+  }
 
   .warn-top {
     position: absolute;
@@ -81,6 +103,26 @@
 .dark {
   .testimonials {
     background-color: rgba(#333, 0.2);
+
+    .background_div {
+      background-image: radial-gradient(
+        circle at top left,
+        #2D3A47 0%,
+        #2D3A47 2%,
+        #3A4856 2%,
+        #3A4856 23%,
+        #414D59 23%,
+        #414D59 55%,
+        #4E5D6C 55%,
+        #4E5D6C 80%,
+        #83FFDA 80%,
+        #83FFDA 86%,
+        #64E9C2 86%,
+        #64E9C2 96%,
+        #2FE0AC 96%,
+        #2FE0AC 100%
+      );
+    }
     .card_wrapper {
       .card {
         border-left: 5px solid $accent-color;

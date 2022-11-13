@@ -48,44 +48,46 @@ const data = [
 const Testimonials = () => {
   return (
     <section className="testimonials">
-      <div className="container_sm">
-        <h1 className="title_text text_center">What they say</h1>
-        <p className="text_center desc_text">
-          Things my mentors and seniors talk about me.
-        </p>
-
-        <div className="card_wrapper">
-          <Swiper
-            spaceBetween={30}
-            freeMode={true}
-            pagination={{
-              clickable: true,
-            }}
-            modules={[FreeMode, Pagination]}
-            className="mySwiper"
-            breakpoints={{
-              640: {
-                slidesPerView: 1,
-
-              },
-              768: {
-                slidesPerView: 1,
-
-              },
-              1024: {
-                slidesPerView: 2,
-
-              },
-            }}
-          >
-            {data.map((person, index) => {
-              return (
-                <SwiperSlide key={index}>
-                  <Card person={person} />
-                </SwiperSlide>
-              );
-            })}
-          </Swiper>
+      <div className="background_div">
+        <div className="container_sm">
+          <h1 className="title_text text_center">What they say</h1>
+          <p className="text_center desc_text">
+            Things my mentors and seniors talk about me.
+          </p>
+        
+          <div className="card_wrapper">
+            <Swiper
+              spaceBetween={30}
+              freeMode={true}
+              pagination={{
+                clickable: true,
+              }}
+              modules={[FreeMode, Pagination]}
+              className="mySwiper"
+              breakpoints={{
+                640: {
+                  slidesPerView: 1,
+        
+                },
+                768: {
+                  slidesPerView: 1,
+        
+                },
+                1024: {
+                  slidesPerView: 2,
+        
+                },
+              }}
+            >
+              {data.map((person, index) => {
+                return (
+                  <SwiperSlide key={index}>
+                    <Card person={person} />
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
+          </div>
         </div>
       </div>
     </section>
