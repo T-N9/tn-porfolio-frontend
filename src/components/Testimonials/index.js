@@ -20,29 +20,7 @@ const data = [
     company: "MMSIT",
     saying:
       "Te Nyain is a well-trained student who took the \"Special Web Design\" course from us. He is specialized in Front-end development and delivering trustworthy interactive websites to his consumers.",
-  },
-  {
-    name: "Chris",
-    company: "LOR Media",
-    country: "USA",
-    position: "Business Owner",
-    saying:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas accusantium suscipit aliquid, aut eum sequi assumenda excepturi accusamus magnam quod doloremque? Omnis autem nesciunt ipsam deserunt debitis ex cumque obcaecati.",
-  },
-  {
-    name: "David",
-    country: "Myanmar",
-    position: "Front-end developer",
-    saying:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-  },
-  {
-    name: "Michael",
-    country: "Japan",
-    position: "Senior Programmer",
-    saying:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. sunt in culpa qui officia deserunt mollit anim id est laborum.",
-  },
+  }
 ];
 
 const Testimonials = () => {
