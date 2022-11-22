@@ -21,7 +21,7 @@ const HomePage = () => {
             <div id="portfolio">
                 <HomeProject/>
             </div>
-            {/* <Testimonials/> */}
+            <Testimonials/>
             {/* <HomeMotto/> */}
             <HomeSkills/>
             <HomeContact/>
