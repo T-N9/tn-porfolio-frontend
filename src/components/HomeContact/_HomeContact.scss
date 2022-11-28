@@ -12,6 +12,11 @@
       flex-direction: column;
     }
 
+    @include m-breakpoint-down(small) {
+      margin: 0 1rem;
+      padding: 5rem 20px;
+    }
+
     &:hover {
       box-shadow: rgba(170, 170, 170, 0.3) 0px 0px 0px 3px;
     }
