@@ -78,6 +78,9 @@ const Testimonials = () => {
                 1024: {
                   slidesPerView: 2,
                 },
+                1920: {
+                  slidesPerView: 3,
+                },
               }}
             >
               {data.map((person, index) => {
