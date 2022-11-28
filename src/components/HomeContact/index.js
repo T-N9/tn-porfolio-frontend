@@ -5,7 +5,7 @@ import ContactForm from './ContactForm';
 const HeroContact = () => {
     return (
         <section className="contact_page_wrapper">
-            <div className="container_sm contact_page">
+            <div className="contact_page">
                 <ContactImg/>
                 <ContactForm/>
             </div>
