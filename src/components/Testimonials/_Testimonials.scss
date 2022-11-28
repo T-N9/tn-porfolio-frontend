@@ -10,7 +10,7 @@
   position: relative;
 
   .background_div {
-    background-attachment: fixed;
+    // background-attachment: fixed;
     padding: 50px 0;
     background-image: radial-gradient(
       circle at top left,
@@ -22,12 +22,12 @@
       #F9F9F9 55%,
       #FCFCFC 55%,
       #FCFCFC 80%,
-      #42C0FF 80%,
-      #42C0FF 86%,
-      #26A8EA 86%,
-      #26A8EA 96%,
-      #1192D3 96%,
-      #1192D3 100%
+      #42C0FF60 80%,
+      #42C0FF60 86%,
+      #26A8EA60 86%,
+      #26A8EA60 96%,
+      #1192D360 96%,
+      #1192D360 100%
     );
   }
 
@@ -68,8 +68,13 @@
     overflow: visible;
 
     .swiper {
-      padding: 20px 10px !important;
+      padding: 20px 5rem !important;
       padding-bottom: 50px !important;
+
+      @include m-breakpoint-down(small) {
+        padding: 20px 1rem !important;
+        padding-bottom: 50px !important;
+      }
     }
 
     .card {
@@ -77,9 +82,14 @@
       user-select: none;
       pointer-events: none;
       box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-      border-left: 5px solid $primary-color;
-      padding: 10px 20px;
+      // border-left: 5px solid $primary-color;
+      padding: 25px 30px;
+      border-radius: 15px;
       height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
       // min-width: 500px;
       .saying {
         &::first-letter {
@@ -94,7 +104,9 @@
       }
 
       .info {
-        margin-top: 2rem;
+        border-top : 2px solid rgba($primary-color, 0.5) ;
+        padding-top: 5px;
+        // margin-top: 2rem;
       }
     }
   }
@@ -115,22 +127,25 @@
         #414D59 55%,
         #4E5D6C 55%,
         #4E5D6C 80%,
-        #83FFDA 80%,
-        #83FFDA 86%,
-        #64E9C2 86%,
-        #64E9C2 96%,
-        #2FE0AC 96%,
-        #2FE0AC 100%
+        #83FFDA60 80%,
+        #83FFDA60 86%,
+        #64E9C260 86%,
+        #64E9C260 96%,
+        #2FE0AC60 96%,
+        #2FE0AC60 100%
       );
     }
     .card_wrapper {
       .card {
-        border-left: 5px solid $accent-color;
-        background-color: $dark-color;
+        background-color: #4d5a68;
         .saying {
           &::first-letter {
             color: $accent-color;
           }
+        }
+
+        .info {
+          border-top : 2px solid rgba($accent-color, 0.5) ;
         }
       }
     }
