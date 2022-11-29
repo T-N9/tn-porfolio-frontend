@@ -104,11 +104,16 @@
     }
 
     p {
-      border: 3px solid $primary-color;
+      border: 3px solid rgba($primary-color, 0.5);
       padding: 30px;
       width: 60%;
       box-shadow: rgba($primary-color, 0.15) 0px 48px 100px 0px;
       border-radius: 10px;
+      background-color: white;
+      background-image: url(../../assets/contact-bg.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
 
       @include m-breakpoint-down(lmedium) {
         width: 80%;
@@ -125,7 +130,6 @@
 
 .dark {
   .service_body {
-
     &--card {
       box-shadow: rgba($accent-color, 0.1) 0px 0px 0px 1px;
 
@@ -150,8 +154,9 @@
       }
 
       p {
-        border: 3px solid $accent-color;
+        border: 3px solid rgba($accent-color, 0.5);
         box-shadow: rgba($accent-color, 0.15) 0px 48px 100px 0px;
+        background-image: url(../../assets/contact-bg-dark.svg);
       }
     }
   }
