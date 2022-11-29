@@ -13,12 +13,41 @@
   &--content {
     flex: 5;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
+    position: relative;
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      position: sticky;
+      top: 0;
+    }
+
+    .intro {
+      font-weight: bold;
+      font-size: 1.6rem;
+
+      @include m-breakpoint-down(small) {
+        font-size: 1.2rem;
+      }
+    }
+    .description {
+      font-size: 1.6rem;
+
+      @include m-breakpoint-down(small) {
+        font-size: 1.2rem;
+      }
+    }
+
+    @include m-breakpoint-down(lmedium) {
+      margin-top: 10rem;
+    }
 
     h1 {
       // width: 80%;
-      padding-top: 100px;
+      // padding-top: 100px;
       font-size: 3rem;
 
       @include m-breakpoint-down(small) {

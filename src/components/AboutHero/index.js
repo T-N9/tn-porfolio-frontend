@@ -6,14 +6,24 @@ import HeroImage from "../../assets/aboutHero.webp";
 const AboutHero = () => {
   return (
     <section className="about_hero">
-      <div className="container">
+      <div className="container_sm">
         <div className="about_hero--wrapper">
           <div className="about_hero--content">
-            <h1 className="">
-              I am <span className="ht_text">Te Nyain Moe Lwin</span>,<br/>
-              22 years old creative <span className="ht_text">front-end</span> web developer with 1+ years experience. I am here to help
-              turn your <span className="ht_text">idea into life.</span>{" "}
-            </h1>
+            <div className="wrapper">
+              <p className="intro">
+                I am <span className="ht_text">Te Nyain Moe Lwin</span>, 22
+                years old creative front-end web developer with 1+ years
+                experience. I am here to help
+              </p>
+              <h1 className="">
+                turn your <span className="ht_text">idea into life.</span>{" "}
+              </h1>
+              <p className="description">
+                Since 2020, I have enjoyed learning digital design, web
+                development, and content creation to deliver implicit and
+                reachable information.
+              </p>
+            </div>
           </div>
 
           <div className="about_hero--image">
