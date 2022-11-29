@@ -59,7 +59,7 @@
       img {
         width: 80%;
         height: auto;
-        
+
         @include m-breakpoint-down(lmedium) {
           width: 60%;
         }
@@ -257,7 +257,7 @@
 .dark {
   .contact_page_wrapper {
     .contact_page {
-      background-color: #4d5a68;
+      background-color: #37414b;
       .contact_img {
         #light-box {
           display: none;
