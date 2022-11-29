@@ -8,6 +8,9 @@
     box-shadow: rgba(223, 223, 223, 0.3) 0px 0px 0px 3px;
     background-color: white;
     background-image: url(../../assets/contact-bg.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 
     border-radius: 15px;
     @include m-breakpoint-down(lmedium) {
