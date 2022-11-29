@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import ProjectCard from "./ProjectCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { client, urlFor } from "../../client";
 import { nanoid } from "@reduxjs/toolkit";
+
+import { setProjectData } from "../../redux/slices/ProjectsSlice";
 
 // import required modules
 import { Pagination } from "swiper";
@@ -12,20 +15,21 @@ import { Pagination } from "swiper";
 // import "swiper-bundle.min.css";
 
 const SwiperCards = () => {
+  const dispatch = useDispatch();
+  const { contentData } = useSelector((state) => state.projectData);
+
   const [projects, setProjects] = useState([]);
   useEffect(() => {
     const query = '*[_type == "projects"] | order(order asc)';
 
-    client.fetch(query).then((data) => {
-      setProjects(data);
-    });
+    contentData.length === 0 &&
+      client.fetch(query).then((data) => {
+        setProjects(data);
+        dispatch(setProjectData(data));
+      });
   }, []);
 
-  if (projects !== []) {
-    // console.log(projects);
-  }
-
-  const ProjectCards = projects.slice(0,3).map((project) => {
+  const ProjectCards = contentData?.slice(0, 3).map((project) => {
     const { title, description, icon, category, slug } = project;
     return (
       <SwiperSlide key={nanoid()}>
