@@ -16,7 +16,7 @@ const AboutHero = () => {
                 experience. I am here to help
               </p>
               <h1 className="">
-                turn your <span className="ht_text">idea into life.</span>{" "}
+                Turn your <span className="ht_text">idea into life.</span>{" "}
               </h1>
               <p className="description">
                 Since 2020, I have enjoyed learning digital design, web
