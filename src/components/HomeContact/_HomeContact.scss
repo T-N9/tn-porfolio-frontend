@@ -6,7 +6,9 @@
     padding: 7rem 0;
     transition: all 200ms ease-out;
     box-shadow: rgba(223, 223, 223, 0.3) 0px 0px 0px 3px;
-    background-color: #fafafa;
+    background-color: white;
+    background-image: url(../../assets/contact-bg.svg);
+
     border-radius: 15px;
     @include m-breakpoint-down(lmedium) {
       flex-direction: column;
@@ -258,6 +260,7 @@
   .contact_page_wrapper {
     .contact_page {
       background-color: #37414b;
+      background-image: url(../../assets/contact-bg-dark.svg);
       .contact_img {
         #light-box {
           display: none;
@@ -306,7 +309,7 @@
           }
 
           .tn_form_input {
-            background-color: rgba($white, 0.2);
+            background-color: #4d5a68;
             box-shadow: rgba($light-color, 0.16) 0px 1px 4px;
             color: #fff;
             &:focus {
