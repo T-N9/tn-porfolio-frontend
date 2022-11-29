@@ -1,4 +1,6 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { staggerContainer } from "../../utils/motion";
 
 /* Components */
 import {
@@ -9,6 +11,7 @@ import {
   DesignToCode,
   Frontend,
 } from "../Animated";
+import { TypingText } from "../Animated/TypingText";
 
 const ServiceBody = () => {
   return (
@@ -104,8 +107,37 @@ const ServiceBody = () => {
         <div className="separator"></div>
 
         <div className="service_body--promote">
-          <h1 className="ht_text outlined_title"> Your goal is my mission. </h1>
-          <p>
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.25 }}
+          >
+            <div className="lg_text">
+              <TypingText
+                title="Your goal is"
+                textStyles="ht_text outlined_title"
+              />
+              <TypingText
+                title="my mission."
+                textStyles="ht_text outlined_title"
+              />
+            </div>
+
+            <div className="sm_text">
+              <TypingText
+                title="Your goal"
+                textStyles="ht_text outlined_title"
+              />
+              <TypingText title="is my" textStyles="ht_text outlined_title" />
+              <TypingText
+                title="mission."
+                textStyles="ht_text outlined_title"
+              />
+            </div>
+          </motion.div>
+          {/* <h1 className="ht_text outlined_title"> Your goal is my mission. </h1> */}
+          <p className="para">
             As a front-end web developer, I make sure that my website has good
             design qualities, from colors, and typography to clean coding and
             performance. Nowadays, there are so many ways to create web content

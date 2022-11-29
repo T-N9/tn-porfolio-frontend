@@ -85,11 +85,34 @@
     @include flex-center;
     flex-direction: column;
 
+    .lg_text {
+      display: flex;
+      gap: 0rem 1rem;
+      margin-bottom: 1.5rem;
+
+      @include m-breakpoint-down(lmedium) {
+        flex-direction: column;
+      }
+      @include m-breakpoint-down(small) {
+        display: none;
+      }
+    }
+
+    .sm_text {
+      gap: 0rem 1rem;
+      margin-bottom: 1.5rem;
+      flex-direction: column;
+      display: none;
+
+      @include m-breakpoint-down(small) {
+        display: flex;
+      }
+    }
+
     h1 {
       position: relative;
       z-index: 5;
       background-color: white;
-      padding: 5px 20px;
       text-align: center;
       font-family: $font-primary;
       transition: background-color 200ms ease-in 50ms;
@@ -103,7 +126,7 @@
       }
     }
 
-    p {
+    .para {
       border: 3px solid rgba($primary-color, 0.5);
       padding: 30px;
       width: 60%;
@@ -153,7 +176,7 @@
         background-color: $dark-color;
       }
 
-      p {
+      .para {
         border: 3px solid rgba($accent-color, 0.5);
         box-shadow: rgba($accent-color, 0.15) 0px 48px 100px 0px;
         background-image: url(../../assets/contact-bg-dark.svg);
