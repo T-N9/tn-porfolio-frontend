@@ -22,7 +22,7 @@
       width: 3px;
       background: $primary-color;
       top: 0;
-      bottom: 195px;
+      bottom: 230px;
       left: 13px;
       z-index: 1;
 
@@ -39,7 +39,7 @@
       gap: 5rem;
 
       @include m-breakpoint-down(small) {
-        gap: 2rem;
+        gap: 1rem;
         flex-direction: row;
       }
 
@@ -129,11 +129,11 @@
         @include m-breakpoint-down(small) {
           transform: rotate(90deg);
           width: 3px;
-          height: 30px;
+          height: 17px;
           border-left: 1px dashed #1192d3;
-          top: 0px;
+          top: 7px;
           left: unset;
-          right: -80%;
+          right: -50%;
         }
       }
     }
@@ -150,7 +150,6 @@
 
 .dark {
   .about-timeline {
-
     &--content {
       .item {
         .description {
