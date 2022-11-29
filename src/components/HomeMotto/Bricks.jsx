@@ -1,11 +1,16 @@
 import React from "react";
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
+import { fadeIn } from "../../utils/motion";
 
 function Bricks() {
   return (
     <motion.div
-    whileInView={{ opacity: [0, 1], y: [100 , 0]}}
-    transition={{ duration: 0.5, delayChildren : 1 }}
+      // whileInView={{ opacity: [0, 1], y: [100 , 0]}}
+      // transition={{ duration: 0.5, delayChildren : 1 }}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+      variants={fadeIn("up", "tween", 0.2, 1)}
     >
       <svg
         className="brick_svg"
