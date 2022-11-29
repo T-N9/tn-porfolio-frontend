@@ -5,7 +5,8 @@
     padding: 2rem 0;
   }
 
-  p {
+  .jp-code {
+    display: none;
     position: absolute;
     font-weight: 800;
     z-index: 500;
@@ -22,6 +23,7 @@
 
   .hero_page {
     @include flex-center;
+    gap: 1rem 0;
 
     @include m-breakpoint-down(lmedium) {
       flex-direction: column-reverse;
@@ -40,18 +42,51 @@
         width: 100%;
       }
 
+      .content {
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0rem;
+
+        .intro {
+          font-size: 1.6rem;
+          font-weight: 700;
+
+          @include m-breakpoint-down(small) {
+            text-align: center;
+            font-size: 1.5rem;
+          }
+        }
+
+        .description {
+          width: 85%;
+          font-size: 1.6rem;
+
+          @include m-breakpoint-down(lmedium) {
+            text-align: justify;
+ 
+            width: 85%;
+          }
+
+          @include m-breakpoint-down(small) {
+            // text-align: left;
+            margin: auto;
+            font-size: 1.2rem;
+          }
+        }
+      }
+
       &--text {
-        font-size: $fs-500;
-        margin-bottom: calUni(25px);
+        font-size: 3rem;
+        // margin-bottom: calUni(25px);
 
         @include m-breakpoint-down(large) {
-          margin-top: calUni(30px);
           font-size: 2.5rem;
         }
 
         @include m-breakpoint-down(small) {
-          text-align: left;
-          font-size: $fs-300;
+          text-align: center;
+          font-size: 1.7rem;
         }
       }
 
@@ -65,6 +100,9 @@
 
     .hero_img {
       flex: 1;
+      display: flex;
+      justify-content: end;
+      align-items: center;
 
       &--image {
         position: relative;
