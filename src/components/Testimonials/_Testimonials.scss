@@ -56,8 +56,9 @@
 
   .desc_text {
     font-weight: 600;
+    font-size: 0.9rem;
     @include m-breakpoint-down(small) {
-      font-size: 1rem;
+      font-size: 0.8rem;
     }
   }
   .card_wrapper {
