@@ -11,9 +11,9 @@ const HeroTxt = () => {
                 delivers <span className="ht_text">fast and reliable</span> websites.
                 </h1>
 
-                <Link to='/works'>
+                <Link to='/about'>
                     <button aria-label='contact tenyain' className="hero_txt--btn primary_btn">
-                        View works
+                        About Me
                     </button>
                 </Link>
             </div> 
