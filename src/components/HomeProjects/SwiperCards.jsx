@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
-import ProjectCard from "./ProjectCard";
-import { Swiper, SwiperSlide } from "swiper/react";
 import { client, urlFor } from "../../client";
 import { nanoid } from "@reduxjs/toolkit";
+import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
 
+/* Components */
+import ProjectCard from "./ProjectCard";
+import LoadingIcon from "../../assets/loading.svg";
+
+/* Actions */
 import { setProjectData } from "../../redux/slices/ProjectsSlice";
 
 // import required modules
@@ -19,13 +23,17 @@ const SwiperCards = () => {
   const { contentData } = useSelector((state) => state.projectData);
 
   const [projects, setProjects] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+
   useEffect(() => {
+    setIsLoading(true);
     const query = '*[_type == "projects"] | order(order asc)';
 
     contentData.length === 0 &&
       client.fetch(query).then((data) => {
         setProjects(data);
         dispatch(setProjectData(data));
+        setIsLoading(false);
       });
   }, []);
 
@@ -48,36 +56,45 @@ const SwiperCards = () => {
 
   return (
     <>
-      <Swiper
-        modules={[Pagination]}
-        slidesPerView={1}
-        spaceBetween={16}
-        slidesOffsetAfter={0}
-        centeredSlides={true}
-        pagination={{
-          clickable: true,
-        }}
-        breakpoints={{
-          1366: {
-            slidesPerView: 2,
-            spaceBetween: 40,
-            centeredSlides: false,
-          },
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 30,
-            centeredSlides: false,
-          },
-          414: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-            centeredSlides: true,
-          },
-        }}
-        className="mySwiper"
-      >
-        {ProjectCards}
-      </Swiper>
+      {isLoading ? (
+        <div className="loading-projects">
+          <div>
+            <img src={LoadingIcon} alt="loading" />
+            <p>Loading</p>
+          </div>
+        </div>
+      ) : (
+        <Swiper
+          modules={[Pagination]}
+          slidesPerView={1}
+          spaceBetween={16}
+          slidesOffsetAfter={0}
+          centeredSlides={true}
+          pagination={{
+            clickable: true,
+          }}
+          breakpoints={{
+            1366: {
+              slidesPerView: 2,
+              spaceBetween: 40,
+              centeredSlides: false,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+              centeredSlides: false,
+            },
+            414: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+              centeredSlides: true,
+            },
+          }}
+          className="mySwiper"
+        >
+          {ProjectCards}
+        </Swiper>
+      )}
     </>
   );
 };

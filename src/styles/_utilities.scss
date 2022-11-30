@@ -535,3 +535,19 @@ button {
     margin-top: 1rem;
   }
 }
+
+.loading-projects {
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 100px;
+  }
+
+  p {
+    text-align: center;
+    margin-top: 5px;
+  }
+}
