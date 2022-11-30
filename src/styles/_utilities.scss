@@ -544,10 +544,29 @@ button {
 
   img {
     width: 100px;
+    height: 100px;
+  }
+
+  .light {
+    display: block;
+  }
+
+  .dark {
+    display: none;
   }
 
   p {
     text-align: center;
     margin-top: 5px;
+  }
+}
+
+.dark {
+  .light {
+    display: none;
+  }
+
+  .dark {
+    display: block;
   }
 }

@@ -8,6 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 /* Components */
 import ProjectCard from "./ProjectCard";
 import LoadingIcon from "../../assets/loading.svg";
+import LoadingIconDark from "../../assets/loading-dark.svg";
 
 /* Actions */
 import { setProjectData } from "../../redux/slices/ProjectsSlice";
@@ -26,15 +27,16 @@ const SwiperCards = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    setIsLoading(true);
     const query = '*[_type == "projects"] | order(order asc)';
 
-    contentData.length === 0 &&
+    if (contentData.length === 0) {
+      setIsLoading(true);
       client.fetch(query).then((data) => {
         setProjects(data);
         dispatch(setProjectData(data));
         setIsLoading(false);
       });
+    }
   }, []);
 
   const ProjectCards = contentData?.slice(0, 3).map((project) => {
@@ -59,7 +61,8 @@ const SwiperCards = () => {
       {isLoading ? (
         <div className="loading-projects">
           <div>
-            <img src={LoadingIcon} alt="loading" />
+            <img className="light" src={LoadingIcon} alt="loading" />
+            <img className="dark" src={LoadingIconDark} alt="loading" />
             <p>Loading</p>
           </div>
         </div>
