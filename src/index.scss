@@ -30,6 +30,7 @@
 @import "./components/Testimonials/Testimonials";
 @import "./components/AboutWriting/AboutWriting";
 
+/* Selection Styles */
 ::-moz-selection {
   /* Code for Firefox */
   color: $white;
@@ -54,6 +55,7 @@
   }
 }
 
+/* Cursor Styles */
 html,
 body {
   .main_content {
@@ -78,6 +80,7 @@ button {
   }
 }
 
+/* Minor Tags */
 strong {
   color: $primary-color;
 }

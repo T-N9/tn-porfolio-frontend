@@ -1,11 +1,14 @@
 import React, { useState, useEffect, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
-import ScrollToTop from "./container/ScrollToTop";
-import { NavBar } from "./components";
 import { useSelector, useDispatch } from "react-redux";
 import { setCurrentTheme } from "./redux/slices/NavbarSlice";
 import "css.gg/icons/css/spinner.css";
 
+/* Components */
+import ScrollToTop from "./container/ScrollToTop";
+import { NavBar } from "./components";
+
+/* Lazy loading components */
 const HomePage = React.lazy(() => import("./pages/HomePage"));
 const AboutPage = React.lazy(() => import("./pages/AboutPage"));
 const ContactPage = React.lazy(() => import("./pages/ContactPage"));
@@ -17,10 +20,10 @@ const SimplePage = React.lazy(() => import("./pages/SimplePage"));
 
 const App = () => {
   const [loading, setLoading] = useState(true);
+
+  /* Handling Theme */
   const { theme } = useSelector((state) => state.navBar);
-
   const localStorageKey = "theme";
-
   const dispatch = useDispatch();
   let persistedTheme = localStorage.getItem(localStorageKey);
 
