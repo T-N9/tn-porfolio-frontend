@@ -2,13 +2,16 @@ import React from "react";
 
 /* Components */
 import { AllCredits, Footer } from "../components";
+import Transitions from "../components/Animated/Transitions";
 
 const CreditPage = () => {
   return (
     <>
-      <div className="nav_spacer"></div>
-      <AllCredits />
-      <Footer />
+      <Transitions>
+        <div className="nav_spacer"></div>
+        <AllCredits />
+        <Footer />
+      </Transitions>
     </>
   );
 };

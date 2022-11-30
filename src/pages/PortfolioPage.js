@@ -4,6 +4,7 @@ import { setCurrentPage } from "../redux/slices/NavbarSlice";
 
 /* Components */
 import { PortfolioHero, PortfolioProjects, Footer } from "../components";
+import Transitions from "../components/Animated/Transitions";
 
 const PortfolioPage = () => {
   const dispatch = useDispatch();
@@ -14,14 +15,16 @@ const PortfolioPage = () => {
 
   return (
     <>
-      <section className="portfolio_route_wrapper">
-        <div className="nav_spacer"></div>
-        <PortfolioHero />
-        <div className="content_wrapper">
-          <PortfolioProjects />
-        </div>
-      </section>
-      <Footer />
+      <Transitions>
+        <section className="portfolio_route_wrapper">
+          <div className="nav_spacer"></div>
+          <PortfolioHero />
+          <div className="content_wrapper">
+            <PortfolioProjects />
+          </div>
+        </section>
+        <Footer />
+      </Transitions>
     </>
   );
 };

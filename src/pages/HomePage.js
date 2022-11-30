@@ -1,33 +1,43 @@
-import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
-import { setCurrentPage } from '../redux/slices/NavbarSlice';
+import React, { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { setCurrentPage } from "../redux/slices/NavbarSlice";
 
 /* Components */
-import { HomeHero, HomeProject, HomeMotto, HomeSkills, HomeContact,Testimonials, Footer } from '../components';
+import {
+  HomeHero,
+  HomeProject,
+  HomeMotto,
+  HomeSkills,
+  HomeContact,
+  Testimonials,
+  Footer,
+} from "../components";
+import Transitions from "../components/Animated/Transitions";
 
 const HomePage = () => {
+  const dispatch = useDispatch();
 
-    const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(setCurrentPage("Home"));
+  }, []);
 
-    useEffect(() => {
-        dispatch(setCurrentPage('Home'))
-    }, [])
-
-    return (
-        <>
-           <div className="nav_spacer"></div>
-            <HomeHero/> 
-            {/* <HomeAbout/> */}
-            <div id="portfolio">
-                <HomeProject/>
-            </div>
-            <Testimonials/>
-            {/* <HomeMotto/> */}
-            <HomeSkills/>
-            <HomeContact/>
-            <Footer/>
-        </>
-    );
-}
+  return (
+    <>
+      <Transitions>
+        <div className="nav_spacer"></div>
+        <HomeHero />
+        {/* <HomeAbout/> */}
+        <div id="portfolio">
+          <HomeProject />
+        </div>
+        <Testimonials />
+        {/* <HomeMotto/> */}
+        <HomeSkills />
+        <HomeContact />
+        <Footer />
+      </Transitions>
+    </>
+  );
+};
 
 export default HomePage;

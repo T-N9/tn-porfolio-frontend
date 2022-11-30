@@ -14,6 +14,8 @@ import "css.gg/icons/css/spinner.css";
 import "css.gg/icons/css/arrow-right-o.css";
 import "css.gg/icons/css/arrow-left-o.css";
 
+import Transitions from "../components/Animated/Transitions";
+
 const ProjectPage = () => {
   const [slugs, setSlugs] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -42,7 +44,7 @@ const ProjectPage = () => {
         return item.slug.current;
       });
 
-      setSlugs(slugData)
+      setSlugs(slugData);
 
       let my_project = data.filter((item) => {
         return slug === item.slug.current;
@@ -96,7 +98,7 @@ const ProjectPage = () => {
     url = source.url;
     period = source.period;
     introduction = source.introduction;
-    development =source.development && source.development;
+    development = source.development && source.development;
     mockup = source.mockup && urlFor(source.mockup);
     pandp = source.pandp && source.pandp;
     designing = source.designing && source.designing;
@@ -108,62 +110,64 @@ const ProjectPage = () => {
 
   return (
     <>
-      <div className="nav_spacer"></div>
-      {project === null || loading ? (
-        <div className="loading_page">
-          <i className={`gg-${"spinner"}`}></i>
-        </div>
-      ) : (
-        <>
-          <ProjectHero
-            title={title}
-            mainImage={image}
-            intro={intro}
-            category={category}
-            icon={icon}
-          />
-          <ProjectStatus
-            status={status}
-            type={type}
-            role={role}
-            period={period}
-          />
-          <ProjectDescription
-            introduction={introduction}
-            url={url}
-            development={development}
-            mockup={mockup}
-            pandp={pandp}
-            designing={designing}
-            mockup_d={mockup_d}
-            palette={palette}
-            typo={typo}
-            logo={logo}
-          />
-          <div className="button_bar container_y_2 container_sm">
-            <div>
-              {isPrev && (
-                <Link to={`/works/${prevProject}`}>
-                  <button className="outlined_btn">
-                    <i className="gg-arrow-left-o"></i>
-                  </button>
-                </Link>
-              )}
-            </div>
-
-            <div>
-              {nextProject !== undefined && (
-                <Link to={`/works/${nextProject}`}>
-                  <button className="outlined_btn">
-                    <i className="gg-arrow-right-o"></i>
-                  </button>
-                </Link>
-              )}
-            </div>
+      <Transitions>
+        <div className="nav_spacer"></div>
+        {project === null || loading ? (
+          <div className="loading_page">
+            <i className={`gg-${"spinner"}`}></i>
           </div>
-        </>
-      )}
-      <Footer />
+        ) : (
+          <>
+            <ProjectHero
+              title={title}
+              mainImage={image}
+              intro={intro}
+              category={category}
+              icon={icon}
+            />
+            <ProjectStatus
+              status={status}
+              type={type}
+              role={role}
+              period={period}
+            />
+            <ProjectDescription
+              introduction={introduction}
+              url={url}
+              development={development}
+              mockup={mockup}
+              pandp={pandp}
+              designing={designing}
+              mockup_d={mockup_d}
+              palette={palette}
+              typo={typo}
+              logo={logo}
+            />
+            <div className="button_bar container_y_2 container_sm">
+              <div>
+                {isPrev && (
+                  <Link to={`/works/${prevProject}`}>
+                    <button className="outlined_btn">
+                      <i className="gg-arrow-left-o"></i>
+                    </button>
+                  </Link>
+                )}
+              </div>
+
+              <div>
+                {nextProject !== undefined && (
+                  <Link to={`/works/${nextProject}`}>
+                    <button className="outlined_btn">
+                      <i className="gg-arrow-right-o"></i>
+                    </button>
+                  </Link>
+                )}
+              </div>
+            </div>
+          </>
+        )}
+        <Footer />
+      </Transitions>
     </>
   );
 };
