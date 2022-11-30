@@ -14,6 +14,9 @@ const ProjectDescription = (props) => {
     palette,
     typo,
     logo,
+    challenge,
+    result,
+    conclusion,
   } = props;
 
   const paletteList = palette?.map((item) => {
@@ -38,10 +41,11 @@ const ProjectDescription = (props) => {
         <div className="description--introduction container_sm container_y_2">
           <h1 className="title_text">Introduction</h1>
           <div className="block_content">
-            {
-              introduction ? <BlockContent blocks={introduction} /> : <p> Website is online but its case study is in process. </p>
-            }
-            
+            {introduction ? (
+              <BlockContent blocks={introduction} />
+            ) : (
+              <p> Website is online but its case study is in process. </p>
+            )}
           </div>
           <a href={url} target="_blank" rel="noreferrer">
             <button className="secondary_btn view_live_btn">
@@ -51,6 +55,25 @@ const ProjectDescription = (props) => {
           </a>
         </div>
       </div>
+
+      {challenge && result && (
+        <div className="container_x_sm container_y_1">
+          <div className="container_sm description--challenge">
+            <div className="item">
+              <h3 className="ht_text">Challenge</h3>
+              <div className="block_content">
+                <BlockContent blocks={challenge} />
+              </div>
+            </div>
+            <div className="item">
+              <h3 className="ht_text">Result</h3>
+              <div className="block_content">
+                <BlockContent blocks={result} />
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
       <div className="container_x_sm container_y_1">
         <div className="description--development container_sm">
           {development && (
@@ -71,7 +94,7 @@ const ProjectDescription = (props) => {
         <>
           <div className="container_x_sm">
             <div className="description--development container_sm">
-              <h1 className="title_text_1">Planning and preparation</h1>
+              <h1 className="title_text">Preparation</h1>
               <div className="block_content">
                 <BlockContent blocks={pandp} />
               </div>
@@ -111,6 +134,19 @@ const ProjectDescription = (props) => {
                 <img className="logo_img" src={logo} alt="logo" />
               </div>
             )}
+          </div>
+        </>
+      )}
+
+      {conclusion && (
+        <>
+          <div className="container_x_sm">
+            <div className="description--development container_sm">
+              <h1 className="title_text">Conclusion</h1>
+              <div className="block_content">
+                <BlockContent blocks={conclusion} />
+              </div>
+            </div>
           </div>
         </>
       )}

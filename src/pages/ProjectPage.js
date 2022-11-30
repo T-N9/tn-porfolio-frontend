@@ -83,7 +83,11 @@ const ProjectPage = () => {
     mockup_d,
     palette,
     typo,
-    logo;
+    logo,
+    challenge,
+    result,
+    conclusion;
+
   if (project !== null) {
     let source = project[0];
 
@@ -106,6 +110,9 @@ const ProjectPage = () => {
     palette = source?.colors && source?.colors;
     typo = source?.typo && urlFor(source?.typo);
     logo = source?.logo && urlFor(source?.logo);
+    challenge = source.challenge;
+    result = source.result;
+    conclusion = source.conclusion;
   }
 
   return (
@@ -142,6 +149,9 @@ const ProjectPage = () => {
               palette={palette}
               typo={typo}
               logo={logo}
+              challenge={challenge}
+              result={result}
+              conclusion={conclusion}
             />
             <div className="button_bar container_y_2 container_sm">
               <div>
