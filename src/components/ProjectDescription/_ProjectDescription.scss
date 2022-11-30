@@ -123,6 +123,17 @@
 }
 
 .dark {
+
+    .description {
+        &--challenge {
+
+        
+            .item {
+
+              border-top: 5px solid rgba($accent-color, 0.5);
+            }
+          }
+    }
   a {
     color: $accent-color;
   }
