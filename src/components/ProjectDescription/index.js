@@ -138,9 +138,14 @@ const ProjectDescription = (props) => {
         </>
       )}
 
+      <div className="container_x_sm">
+        <div className="container_sm">
+          <div className="separator"></div>
+        </div>
+      </div>
       {conclusion && (
         <>
-          <div className="container_x_sm">
+          <div className="container_x_sm conclusion_div">
             <div className="description--development container_sm">
               <h1 className="title_text">Conclusion</h1>
               <div className="block_content">
