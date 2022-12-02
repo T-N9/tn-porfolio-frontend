@@ -72,6 +72,12 @@
     }
   }
 
+  li {
+    @include m-breakpoint-down(small) {
+      font-size: calUni(16px);
+    }
+  }
+
   ul,
   ol {
     margin: 0;

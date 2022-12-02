@@ -34,13 +34,13 @@
   text-align: center;
 }
 
-@include m-breakpoint-up(xlarge) {
+@include m-breakpoint-up(large) {
   .hide_on_desktop {
     display: none !important;
   }
 }
 
-@include m-breakpoint-down(large) {
+@include m-breakpoint-down(lmedium) {
   .hide_on_mobile {
     display: none !important;
   }
@@ -157,7 +157,7 @@ h6 {
   max-width: calUni(1440px);
   margin: auto;
 
-  @include m-breakpoint-down(large) {
+  @include m-breakpoint-down(lmedium) {
     padding: 0 calUni(48px);
   }
 
