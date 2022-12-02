@@ -282,6 +282,18 @@ button {
   margin-bottom: calUni(20px);
 }
 
+.title_text_inv {
+  font-size: $fs-400;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: calUni(20px);
+}
+
+.text_inv {
+  color: white;
+}
+
 .title_text_1 {
   font-size: $fs-300;
   font-weight: 700;
@@ -337,6 +349,10 @@ button {
 
   .title_text {
     color: $accent-color;
+  }
+
+  .title_text_inv {
+    color: white;
   }
 
   .title_text_1 {
