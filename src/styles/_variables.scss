@@ -1,20 +1,25 @@
 @function calUni($e) {
-    @return ($e / 16px)+rem;
+  @return ($e / 16px) + rem;
+}
+
+@font-face {
+  font-family: MyanmarSabae;
+  src: url(../fonts/MyanmarSabae.ttf);
 }
 
 // Font families
-$font-title: 'Poppins', sans-serif;
+$font-title: "Poppins", sans-serif;
 // $font-primary: 'Karla', sans-serif;
-$font-primary: 'Inter', sans-serif;
+$font-primary: "Inter", MyanmarSabae, sans-serif;
 
 // Colors
-$primary-color: #1192D3;
-$dark-color: #3A4856;
-$light-color: #E5E5E5;
-$accent-color: #2FE0AC;
+$primary-color: #1192d3;
+$dark-color: #3a4856;
+$light-color: #e5e5e5;
+$accent-color: #2fe0ac;
 $white: #ffffff;
-$dark-primary-color : #002659;
-$warning-color: #E59D23;
+$dark-primary-color: #002659;
+$warning-color: #e59d23;
 
 // Font sizes
 $fs-100: calUni(18px);
