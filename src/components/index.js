@@ -26,3 +26,4 @@ export { default as AllCredits } from './AllCredits';
 export { default as Testimonials } from './Testimonials';
 
 export { default as AboutWriting } from './AboutWriting';
+export { default as AboutWishing } from './AboutWishing';

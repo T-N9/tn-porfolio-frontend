@@ -11,6 +11,7 @@ import {
   HomeAbout,
   Testimonials,
   AboutWriting,
+  AboutWishing
 } from "../components";
 import Transitions from "../components/Animated/Transitions";
 
@@ -25,6 +26,7 @@ const AboutPage = () => {
     <>
       <Transitions>
         <div className="nav_spacer"></div>
+        <AboutWishing/>
         <AboutHero />
         <HomeAbout />
         <AboutTimeline />
