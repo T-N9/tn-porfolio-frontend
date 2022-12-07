@@ -65,8 +65,8 @@ const Testimonials = () => {
                 delay: 6000,
                 disableOnInteraction: false,
               }}
-              loop={true}
-              modules={[FreeMode, Pagination , Autoplay]}
+              // loop={true}
+              modules={[FreeMode, Pagination, Autoplay ]}
               className="mySwiper"
               breakpoints={{
                 640: {
