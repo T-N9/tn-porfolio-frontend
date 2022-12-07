@@ -80,19 +80,19 @@
 .dark {
   .contact_hero_wrapper {
     background-color: $dark-color;
-    .contact_hero {
-      .content {
-        h1 {
-          color: $dark-color;
-          -webkit-text-stroke: $accent-color;
-          -webkit-text-stroke-width: 2px;
-        }
+  }
+  .open_to_work {
+    .otw_content {
+      h1 {
+        color: $dark-color;
+        -webkit-text-stroke: $accent-color;
+        -webkit-text-stroke-width: 2px;
+      }
 
-        .opening_positions {
-          .position_list {
-            li::before {
-              background-color: $accent-color;
-            }
+      .opening_positions {
+        .position_list {
+          li::before {
+            background-color: $accent-color;
           }
         }
       }

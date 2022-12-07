@@ -12,7 +12,7 @@ const ContactHero = () => {
             </h1>
             <h1 className="hero_txt">
               I am wishing to work
-              <br className="hide_on_mobile" /> and collaborations.
+              <br className="hide_on_mobile" /> and collaborate.
             </h1>
           </div>
         </div>
