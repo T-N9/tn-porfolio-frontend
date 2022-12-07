@@ -60,7 +60,9 @@ const MobileMenu = () => {
         <Toggler />
         <div className="separator nav_separator"></div>
         <div className="mail_div">
-          <button className="secondary_btn">Mail Me</button>
+          <a href="mailto:tenyainmoelwin@gmail.com">
+            <button className="secondary_btn">Mail Me</button>
+          </a>
         </div>
       </section>
     </>
