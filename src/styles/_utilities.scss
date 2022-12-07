@@ -535,10 +535,16 @@ button {
 }
 
 .gradient_bg_transparent {
-  background: linear-gradient(
-    90deg,
-    rgba(47, 224, 172, 0) 3.65%,
-    rgba(116, 209, 255, 0.15) 100%
+  // background: linear-gradient(
+  //   90deg,
+  //   rgba(255, 255, 255, 0.5) 3.65%,
+  //   rgba(116, 209, 255, 0.15) 100%
+  // );
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    rgba(255, 255, 255, 0.5) 0deg,
+    rgba(255, 255, 255, 0.5049) 178.12deg,
+    rgba(17, 146, 214, 0.06) 360deg
   );
 }
 
