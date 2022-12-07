@@ -262,8 +262,8 @@ button {
   background-color: $primary-color;
   color: $white;
   font-weight: 700;
-  height: calUni(40px);
-  padding: 0 calUni(30px);
+  // height: calUni(40px);
+  padding: 15px calUni(30px);
   font-size: 16px;
 
   transition: all 200ms ease-out;
