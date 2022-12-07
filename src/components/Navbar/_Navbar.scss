@@ -155,14 +155,15 @@
         padding: 0;
         margin: calUni(50px) 0;
         list-style-type: none;
+        font-family: $font-title;
 
         text-align: center;
         color: $dark-color;
-        font-size: 36px;
+        font-size: 28px;
         font-weight: 500;
 
         & > .nav_item {
-          margin-bottom: 40px;
+          margin-bottom: 30px;
 
           a {
             display: block;
