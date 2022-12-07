@@ -58,6 +58,10 @@ const MobileMenu = () => {
         </ul>
 
         <Toggler />
+        <div className="separator nav_separator"></div>
+        <div className="mail_div">
+          <button className="secondary_btn">Mail Me</button>
+        </div>
       </section>
     </>
   );
