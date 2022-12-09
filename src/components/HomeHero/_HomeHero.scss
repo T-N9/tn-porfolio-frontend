@@ -63,7 +63,7 @@
           font-size: 1.6rem;
 
           @include m-breakpoint-down(lmedium) {
-            text-align: justify;
+            text-align: left;
  
             width: 85%;
           }
