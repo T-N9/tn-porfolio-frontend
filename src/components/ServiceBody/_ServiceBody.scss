@@ -130,7 +130,8 @@
       border: 3px solid rgba($primary-color, 0.5);
       padding: 30px;
       width: 60%;
-      box-shadow: rgba($primary-color, 0.15) 0px 48px 100px 0px;
+      // box-shadow: rgba($primary-color, 0.15) 0px 48px 100px 0px;
+      box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
       border-radius: 10px;
       background-color: white;
       background-image: url(../../assets/contact-bg.svg);
@@ -178,7 +179,7 @@
 
       .para {
         border: 3px solid rgba($accent-color, 0.5);
-        box-shadow: rgba($accent-color, 0.15) 0px 48px 100px 0px;
+        // box-shadow: rgba($accent-color, 0.15) 0px 48px 100px 0px;
         background-image: url(../../assets/contact-bg-dark.svg);
       }
     }
